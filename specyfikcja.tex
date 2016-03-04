@@ -65,16 +65,24 @@ Przedmiotem Umowy jest dostarczenie, wykonanie, instalacja i wdrożenie systemu 
 \subsection{Wymagania funkcjonalne}
 \begin{enumerate}
     \item System pozwala zalogować się po podaniu poprawnego loginu i hasła
-    \item Tworzenie nowego konta przez administratora
-    \item Tworzenie kont o różnym stopniu uprzywilejowania: 
+    \item Administrator może założyć nowe konto
+    \item W systemie możliwe jest założenie kont użytkowników różnego typu
     \begin{itemize}
-        \item uczeń - może podglądać oceny, dostęp do kalendarza szkoły (plan, eventy), dostęp do materiałów dydaktycznych
-        \item rodzic - wszystko to, co uczeń + może podglądać oceny, wpłacać kasę na konto uczelni, usprawiedliwiać
-        \item nauczyciel - rodzic + zmienia planu, kontakt z rodzicami
-        \item administrator - tworzenie kont użytkowników, nadawanie uprawnień, dodawanie do klas itp
-        \item główny administrator - może wszystko
-        %TODO ubrać w słowa
+        \item \textbf{konto ucznia} - pozwala na dostęp do swoim danych osobowych, ocen cząstkowych i semestralnych, średniej ważonej ze wszystkich przedmiotów, planu zajęć, kalendarium szkoły, materiałów dydaktycznych udostępnionych przez prowadzących zajęcia
+        \item \textbf{konto rodzica} - posiada uprawnienia konta ucznia rozszerzone o moduł opłat, możliwość umieszczania usprawiedliwień dla przyporządkowanych mu kont uczniowskich, oraz skrzynkę wiadomości do korespondencji z nauczycielami. Z każdym kontem rodzica związana musi być lista kont uczniowskich których prawnym opiekunem jest posiadacz tego konta.
+        %TODO: Czy pisać o liście przedmiotów prowadzonych przez nauczyciela?
+        \item \textbf{konto nauczyciela} - funkcjonalność konta rodzica ze zmodyfikowaną listą kont uczniowskich która zawiera wszystkich uczniów uczęszczających na prowadzone przedmioty, podzielona według przedmiotów i klas szkolnych. Dodatkowo konto to umożliwia zamieszczanie materiałów dydaktycznych, wystawianie ocen, kontakt z kontami rodzica, oraz uzupełnianie harmonogramu zajęć dla powiązanych kont ucznia.
+        \item \textbf{konto administratora} - pozwala na zakładanie nowych kont użytkowników, tworzenie powiązań między nimi (np. przypisanie konta ucznia do odpowiadającego mu rodzica), modyfikację planu zajęć
+        % TODO: Czy konto SUPERUSER jest nam niezbędne?
+        \item \textbf{konto administratora głównego "SUPERUSER"} - konto o nieograniczonych przywilejach     
     \end{itemize}
+    \item System oferuje integrację z istniejącymi rozwiązaniami dzienniczków elektronicznych LIBRUS oraz VULCAN na poziomie wyświetlania, modyfikacji oraz synchronizacji dwustronnej wprowadzonych ocen (tzn. wszelkie zmiany wprowadzone w dowolnym systemie powinny być odzwierciedlone w każdym z nich)
+    \item Każde konto uprawnione do wystawiania ocen może to zrobić tylko w ramach swoich przedmiotów i tylko dla uczniów uczęszczających na te zajęcia
+    \item Każda ocena powinna być wartością całkowitoliczbową z zakresu 1-6 z ewentualnym modyfikatorem w postaci symbolu "-" lub "+" występującym raz na samym końcu wartości oceny, posiadać przypisaną wagę (domyślnie ustawioną jako 1), zawierać krótką informację o powodzie jej wystawienia nie dłuższą niż 60 znaków a także datę wystawienia.
+    \item Oceny wprowadzone do systemu mogą być usuwane oraz modyfikowane. Modyfikacja może obejmować zmiany w dowolnej wartości poza datą wystawienia oceny
+    \item Możliwe jest wyliczenie średniej ważonej na podstawie zgromadzonych przez ucznia ocen i wyświetlenie jej jako proponowanej oceny końcowej
+    \item Konto nauczyciela posiada możliwość zaakceptowania proponowanej oceny końcowej wyliczonej przez system jak również wprowadzenie własnej wartości
+    \item Konta rodzica oraz ucznia mogą obejrzeć wystawione oceny a także wszystkie związane z nimi informacje
 \end{enumerate}
 %TODO podział funkcjonalnych:
 system kadr: Dragan, Flis
