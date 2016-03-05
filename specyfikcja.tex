@@ -108,16 +108,19 @@ Przedmiotem Umowy jest dostarczenie, wykonanie, instalacja i wdrożenie systemu 
         % TODO: Czy konto SUPERUSER jest nam niezbędne?
         %\item \textbf{konto administratora głównego \"SUPERUSER\"} - konto o nieograniczonych przywilejach
     \end{itemize}
+    % TODO: Issue #001
     \item Materiały dydaktyczne są sposobem na komunikację między nauczycielem a uczniami. Są to pliki dowolnego typu udostępniane w aplikacji. Nauczyciel ma możliwość dodawania i usuwania ich, uczeń ma możliwośc dodawania. Nauczyciel ma możliwość udostępniania materiałów wszystkim uczniom należącym do klasy, którą uczy. Jednorazowo wrzucone dane nie powinny mieć wielkości przekraczającej 10 MB.
+    % TODO: Issue #002
     \item Plan zajęć jest przypisany do klasy albo nauczyciela. Zawiera informacje o przedmiotach: godzinach ich rozpoczęcia i zakończenia, sali, w której się odbywają, nauczycielu prowadzącym zajęcia (w przypadku planu ucznia).
-    \item Kalendarium zawiera informacje o wydarzeniach szkolnych. Jest uniwersalne dla szkoły. Zawiera informacje o apelach i uroczystościach szkolnych, a także dniach wolnych od zajęć dydaktycznych.
-    \item Kalendarz ucznia - jest to zbiór wydarzeń spersonalizowany dla każdego ucznia. Zawiera informacje o zastępstwach nauczycieli, z którymi uczeń ma zajęcia, informacje o sprawdzianach (ich data oraz przedmiot) oraz o kołach naukowych, do których zapisany jest uczeń
-    \item Klasa jest zbiorem uczniów, posiada swoją nazwę oznaczaną jedną dużą literą alfabetu łacińskiego. Ma przypisanego wychowawcę - dokładnie jednego nauczyciela. Każda klasa ma przypisany plan zajęć.
-
+    \item Kalendarium zawiera informacje o wydarzeniach szkolnych takich jak apele i uroczystości, a także dniach wolnych od zajęć dydaktycznych. Każde takie wydarzenie oprócz swojej daty posiada informację o godzinie rozpoczęcia i zakończenia, lokalizacji oraz krótką informację w postaci notki nie dłuższej niż 100 znaków.
+    \item Kalendarz ucznia jest zbiorem spersonalizowany wydarzeń każdego ucznia. Zawiera informacje o zastępstwach nauczycieli, z którymi uczeń ma zajęcia, informacje o sprawdzianach (ich data oraz przedmiot) oraz o kołach naukowych, do których zapisany jest uczeń
+    % TODO: Issue #003
+    \item Klasa będąca zbiorem uczniów, posiada swoją nazwę oznaczaną jedną dużą literą alfabetu łacińskiego. Ma przypisanego wychowawcę (dokładnie jednego nauczyciela), oraz plan zajęć
     \item System oferuje integrację z istniejącymi rozwiązaniami dzienniczków elektronicznych LIBRUS oraz VULCAN na poziomie wyświetlania, modyfikacji oraz synchronizacji dwustronnej wprowadzonych ocen (tzn. wszelkie zmiany wprowadzone w dowolnym systemie powinny być odzwierciedlone w każdym z nich)
+    % TODO: Co w przypadku konta administratora? Czy poniższe wymaganie jest wystarczająco dokładnie napisane?
     \item Każde konto uprawnione do wystawiania ocen może to zrobić tylko w ramach swoich przedmiotów i tylko dla uczniów uczęszczających na te zajęcia
     \item Każda ocena powinna być wartością całkowitoliczbową z zakresu 1-6 z ewentualnym modyfikatorem w postaci symbolu \"-\" lub \"+\" występującym raz na samym końcu wartości oceny, posiadać przypisaną wagę (domyślnie ustawioną jako 1), zawierać krótką informację o powodzie jej wystawienia nie dłuższą niż 60 znaków a także datę wystawienia.
-    \item Oceny wprowadzone do systemu mogą być usuwane oraz modyfikowane. Modyfikacja może obejmować zmiany w dowolnej wartości poza datą wystawienia oceny
+    \item Oceny wprowadzone do systemu mogą być usuwane oraz modyfikowane. Modyfikacja może obejmować zmiany dowolnej wartości poza datą wystawienia oceny
     \item Możliwe jest wyliczenie średniej ważonej na podstawie zgromadzonych przez ucznia ocen i wyświetlenie jej jako proponowanej oceny końcowej
     \item Konto nauczyciela posiada możliwość zaakceptowania proponowanej oceny końcowej wyliczonej przez system jak również wprowadzenie własnej wartości
     \item Konta rodzica oraz ucznia mogą obejrzeć wystawione oceny a także wszystkie związane z nimi informacje
