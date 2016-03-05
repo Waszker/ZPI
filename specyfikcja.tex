@@ -20,12 +20,12 @@ Głównym celem zamawianego produktu jest usprawienie działania placówki oświ
     \item administracji
     \item obsługi dydaktyki
     \item komunikacji
-    % \item integracji TODO 
+    % \item integracji TODO
     % TODO ew. dodać obsługę administracji - rodzice dokonują wpłat
 \end{itemize}
 
-W ramach zamówienia przygotowany zostanie system informatyczny wraz ze wsparciem technicznym i usługą serwisową. 
-% pakiet serwisowy 
+W ramach zamówienia przygotowany zostanie system informatyczny wraz ze wsparciem technicznym i usługą serwisową.
+% pakiet serwisowy
 
 
 \section{Misja organizacji}
@@ -39,7 +39,7 @@ organizowanie wycieczek, szkolenia rozwijające \\
 komunikacja komputerowa dla starszych pracowników szkół
 
 \section{Opis zakresu projektu}
-% wdrożenie w godz nocnych by nie zaburzyć pracy 
+% wdrożenie w godz nocnych by nie zaburzyć pracy
 % precyzyjnie określić czas działania
 % obsłużenie żądań 100 użytkowników w czasie
 
@@ -65,20 +65,58 @@ Przedmiotem Umowy jest dostarczenie, wykonanie, instalacja i wdrożenie systemu 
 \subsection{Wymagania funkcjonalne}
 \begin{enumerate}
     \item System pozwala zalogować się po podaniu poprawnego loginu i hasła
-    \item Administrator może założyć nowe konto
-    \item W systemie możliwe jest założenie kont użytkowników różnego typu
+    \item W systemie możliwe jest założenie kont użytkowników różnego typu:
     \begin{itemize}
-        \item \textbf{konto ucznia} - pozwala na dostęp do swoim danych osobowych, ocen cząstkowych i semestralnych, średniej ważonej ze wszystkich przedmiotów, planu zajęć, kalendarium szkoły, materiałów dydaktycznych udostępnionych przez prowadzących zajęcia
-        \item \textbf{konto rodzica} - posiada uprawnienia konta ucznia rozszerzone o moduł opłat, możliwość umieszczania usprawiedliwień dla przyporządkowanych mu kont uczniowskich, oraz skrzynkę wiadomości do korespondencji z nauczycielami. Z każdym kontem rodzica związana musi być lista kont uczniowskich których prawnym opiekunem jest posiadacz tego konta.
+        \item \textbf{konto ucznia}
+        \begin{itemize}
+            \item Zawiera informacje o imieniu, nazwisku, adresie ucznia oraz klasie, do której należy
+            \item Pozwala na dostęp do planów zajęć wszystkich klas w szkole
+            \item Umożliwia sprawdzenie swoich ocen cząstkowych i semestralnych, średniej ważonej ze wszystkich przedmiotów
+            \item Udostępnia podgląd kalendarium szkoły
+            \item Pozwala zapisać się do koła naukowego
+            \item Umożliwia dostęp do prywatnego kalendarza zawierającego informacje o sprawdzianach, kołach naukowych, do których uczeń jest zapisany i zastępstwach nauczycieli, z którymi uczeń ma zajęcia
+            \item Daje dostęp do materiałów dydaktycznych zamieszczanych przez nauczycieli
+        \end{itemize}
+        \item \textbf{konto rodzica} 
+        \begin{itemize}
+            \item Jest przypisane do co najmniej jednego ucznia
+            \item Ma dostęp do wszystkich danych, do których ma dostęp jego dziecko
+            \item Umożliwia usprawiedliwienie nieobecności poprzez dodanie informacji tekstowej lub udostępnienie zeskanowanych zwolnień lekarskich
+            \item Pozwala komunikować się z nauczycielami i innymi rodzicami poprzez wiadomości tekstowe
+            \item Zawiera moduł opłat %TODO ?
+        \end{itemize}
         %TODO: Czy pisać o liście przedmiotów prowadzonych przez nauczyciela?
-        \item \textbf{konto nauczyciela} - funkcjonalność konta rodzica ze zmodyfikowaną listą kont uczniowskich która zawiera wszystkich uczniów uczęszczających na prowadzone przedmioty, podzielona według przedmiotów i klas szkolnych. Dodatkowo konto to umożliwia zamieszczanie materiałów dydaktycznych, wystawianie ocen, kontakt z kontami rodzica, oraz uzupełnianie harmonogramu zajęć dla powiązanych kont ucznia.
-        \item \textbf{konto administratora} - pozwala na zakładanie nowych kont użytkowników, tworzenie powiązań między nimi (np. przypisanie konta ucznia do odpowiadającego mu rodzica), modyfikację planu zajęć
+        \item \textbf{konto nauczyciela} 
+        \begin{itemize}
+            \item Zawiera informacje o imieniu, nazwisku, adresie nauczyciela
+            \item Jest przypisane do co najmniej jednego przedmiotu
+            \item Zawiera listę wszystkich uczniów uczęszczających na prowadzone przedmioty, podzieloną według przedmiotów i klas szkolnych
+            \item Pozwala komunikować się z rodzicami, innymi nauczycielami i administratorami poprzez wiadomości tekstowe
+            \item Umożliwia wystawianie ocen cząstkowych i semestralnych z przedmiotów, do których jest przypisany nauczyciel
+            \item Umożliwia dodawanie informacji o sprawdzianach
+            \item Pozwala na dostęp do swojego planu zajęć oraz do wszystkich planów zajęć klas i nauczycieli
+            \item Umożliwia udostępnianie materiałów dydaktycznych dowolnego typu wybranym klasom
+        \end{itemize}
+        \item \textbf{konto administratora}
+        \begin{itemize}
+             \item Pozwala na zakładanie nowych kont użytkowników i tworzenie powiązań między nimi (np. przypisanie konta ucznia do odpowiadającego mu rodzica)
+             \item Daje możliwość dodawania, edycji i usuwania klas oraz zapisanych do nich uczniów 
+             \item Umożliwia modyfikowanie planu zajęć
+             \item Pozwala na dodawanie i usuwanie z kalendarza informacji o nieobecności nauczycieli oraz wycieczkach szkolnych
+             \item Umożliwia zmianę ocen uczniów
+         \end{itemize} 
         % TODO: Czy konto SUPERUSER jest nam niezbędne?
-        \item \textbf{konto administratora głównego "SUPERUSER"} - konto o nieograniczonych przywilejach     
+        %\item \textbf{konto administratora głównego \"SUPERUSER\"} - konto o nieograniczonych przywilejach
     \end{itemize}
+    \item Materiały dydaktyczne są sposobem na komunikację między nauczycielem a uczniami. Są to pliki dowolnego typu udostępniane w aplikacji. Nauczyciel ma możliwość dodawania i usuwania ich, uczeń ma możliwośc dodawania. Nauczyciel ma możliwość udostępniania materiałów wszystkim uczniom należącym do klasy, którą uczy. Jednorazowo wrzucone dane nie powinny mieć wielkości przekraczającej 10 MB.
+    \item Plan zajęć jest przypisany do klasy albo nauczyciela. Zawiera informacje o przedmiotach: godzinach ich rozpoczęcia i zakończenia, sali, w której się odbywają, nauczycielu prowadzącym zajęcia (w przypadku planu ucznia).
+    \item Kalendarium zawiera informacje o wydarzeniach szkolnych. Jest uniwersalne dla szkoły. Zawiera informacje o apelach i uroczystościach szkolnych, a także dniach wolnych od zajęć dydaktycznych.
+    \item Kalendarz ucznia - jest to zbiór wydarzeń spersonalizowany dla każdego ucznia. Zawiera informacje o zastępstwach nauczycieli, z którymi uczeń ma zajęcia, informacje o sprawdzianach (ich data oraz przedmiot) oraz o kołach naukowych, do których zapisany jest uczeń
+    \item Klasa jest zbiorem uczniów, posiada swoją nazwę oznaczaną jedną dużą literą alfabetu łacińskiego. Ma przypisanego wychowawcę - dokładnie jednego nauczyciela. Każda klasa ma przypisany plan zajęć.
+
     \item System oferuje integrację z istniejącymi rozwiązaniami dzienniczków elektronicznych LIBRUS oraz VULCAN na poziomie wyświetlania, modyfikacji oraz synchronizacji dwustronnej wprowadzonych ocen (tzn. wszelkie zmiany wprowadzone w dowolnym systemie powinny być odzwierciedlone w każdym z nich)
     \item Każde konto uprawnione do wystawiania ocen może to zrobić tylko w ramach swoich przedmiotów i tylko dla uczniów uczęszczających na te zajęcia
-    \item Każda ocena powinna być wartością całkowitoliczbową z zakresu 1-6 z ewentualnym modyfikatorem w postaci symbolu "-" lub "+" występującym raz na samym końcu wartości oceny, posiadać przypisaną wagę (domyślnie ustawioną jako 1), zawierać krótką informację o powodzie jej wystawienia nie dłuższą niż 60 znaków a także datę wystawienia.
+    \item Każda ocena powinna być wartością całkowitoliczbową z zakresu 1-6 z ewentualnym modyfikatorem w postaci symbolu \"-\" lub \"+\" występującym raz na samym końcu wartości oceny, posiadać przypisaną wagę (domyślnie ustawioną jako 1), zawierać krótką informację o powodzie jej wystawienia nie dłuższą niż 60 znaków a także datę wystawienia.
     \item Oceny wprowadzone do systemu mogą być usuwane oraz modyfikowane. Modyfikacja może obejmować zmiany w dowolnej wartości poza datą wystawienia oceny
     \item Możliwe jest wyliczenie średniej ważonej na podstawie zgromadzonych przez ucznia ocen i wyświetlenie jej jako proponowanej oceny końcowej
     \item Konto nauczyciela posiada możliwość zaakceptowania proponowanej oceny końcowej wyliczonej przez system jak również wprowadzenie własnej wartości
@@ -88,7 +126,7 @@ Przedmiotem Umowy jest dostarczenie, wykonanie, instalacja i wdrożenie systemu 
 system kadr: Dragan, Flis
 system kadr: Pan Szef
 system ocen: MW, KT
-dydaktyka: K i H spis sprawdzianów, materiały dydaktyczne, plan zajęć, kalendarz, opis kont: uczeń ma możliwość podejrzenia, admin ma coś innego, nauczyciel może zgłosić prośbę o urlop, wypłaty, eksport cv (nauczyciel), elektroniczne wrzucanie zwolnień, zmiana wypłat, 
+dydaktyka: K i H spis sprawdzianów, materiały dydaktyczne, plan zajęć, kalendarz, opis kont: uczeń ma możliwość podejrzenia, admin ma coś innego, nauczyciel może zgłosić prośbę o urlop, wypłaty, eksport cv (nauczyciel), elektroniczne wrzucanie zwolnień, zmiana wypłat,
 
 
 % dostarczenie bazy danych zawierającej informacje o planie zajęć, kołach naukowych oraz uroczystościach szkolnych dostarczonych przez Zamawiającego w formie elektronicznej zgodnej z formatem pliku *.xls;
