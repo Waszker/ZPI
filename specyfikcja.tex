@@ -70,7 +70,6 @@ Przedmiotem Umowy jest dostarczenie, wykonanie, instalacja i wdrożenie systemu 
         \item \textbf{konto ucznia}
         \begin{itemize}
             \item Zawiera informacje o imieniu, nazwisku, adresie ucznia oraz klasie, do której należy
-            \item Pozwala na dostęp do planów zajęć wszystkich klas w szkole
             \item Umożliwia sprawdzenie swoich ocen cząstkowych i semestralnych, średniej ważonej ze wszystkich przedmiotów
             \item Udostępnia podgląd kalendarium szkoły
             \item Pozwala zapisać się do koła naukowego
@@ -95,7 +94,6 @@ Przedmiotem Umowy jest dostarczenie, wykonanie, instalacja i wdrożenie systemu 
             \item Pozwala komunikować się z rodzicami, innymi nauczycielami i administratorami poprzez wiadomości tekstowe
             \item Umożliwia wystawianie ocen cząstkowych i semestralnych z przedmiotów, do których jest przypisany nauczyciel
             \item Umożliwia dodawanie informacji o sprawdzianach
-            \item Pozwala na dostęp do swojego planu zajęć oraz do wszystkich planów zajęć klas i nauczycieli
             \item Umożliwia udostępnianie materiałów dydaktycznych dowolnego typu wybranym klasom
         \end{itemize}
         \item \textbf{konto administratora}
@@ -109,14 +107,13 @@ Przedmiotem Umowy jest dostarczenie, wykonanie, instalacja i wdrożenie systemu 
         % TODO: Czy konto SUPERUSER jest nam niezbędne?
         %\item \textbf{konto administratora głównego \"SUPERUSER\"} - konto o nieograniczonych przywilejach
     \end{itemize}
-    % TODO: Issue #001
-    \item Materiały dydaktyczne są sposobem na komunikację między nauczycielem a uczniami. Są to pliki dowolnego typu udostępniane w aplikacji. Nauczyciel ma możliwość dodawania i usuwania ich, uczeń ma możliwośc dodawania. Nauczyciel ma możliwość udostępniania materiałów wszystkim uczniom należącym do klasy, którą uczy. Jednorazowo wrzucone dane nie powinny mieć wielkości przekraczającej 10 MB.
+    \item Materiały dydaktyczne to pliki dowolnego typu udostępniane w aplikacji. Nauczyciel ma możliwość pobierania, dodawania i usuwania ich, uczeń ma możliwość pobierania ich. Nauczyciel ma możliwość udostępniania materiałów na stronę przedmiotu, którego uczy. Jednorazowo wrzucone dane nie mogą przekraczać 10 MB.
     % TODO: Issue #002
-    \item Plan zajęć jest przypisany do klasy albo nauczyciela. Zawiera informacje o przedmiotach: godzinach ich rozpoczęcia i zakończenia, sali, w której się odbywają, nauczycielu prowadzącym zajęcia (w przypadku planu ucznia).
+    \item Plan zajęć klasy zawiera informacje o przedmiotach: godzinach ich rozpoczęcia i zakończenia, sali, w której się odbywają oraz nauczycielu prowadzącym zajęcia. Może być wyświetlany przez dowolny typ konta.
+    \item Plan zajęć nauczyciela zawiera informacje o przedmiotach: godzinach ich rozpoczęcia i zakończenia, sali, w której się odbywają oraz klasie, z którą ma zajęcia. Może być wyświetlany przez dowolny typ konta.
     \item Kalendarium zawiera informacje o wydarzeniach szkolnych takich jak apele i uroczystości, a także dniach wolnych od zajęć dydaktycznych. Każde takie wydarzenie oprócz swojej daty posiada informację o godzinie rozpoczęcia i zakończenia, lokalizacji oraz krótką informację w postaci notki nie dłuższej niż 100 znaków.
     \item Kalendarz ucznia jest zbiorem spersonalizowany wydarzeń każdego ucznia. Zawiera informacje o zastępstwach nauczycieli, z którymi uczeń ma zajęcia, informacje o sprawdzianach (ich data oraz przedmiot) oraz o kołach naukowych, do których zapisany jest uczeń
-    % TODO: Issue #003
-    \item Klasa będąca zbiorem uczniów, posiada swoją nazwę oznaczaną jedną dużą literą alfabetu łacińskiego. Ma przypisanego wychowawcę (dokładnie jednego nauczyciela), oraz plan zajęć
+    \item Klasa będąca zbiorem uczniów, posiada swoją nazwę oznaczaną jedną cyfrą (rok nauki) oraz jedną dużą literą alfabetu łacińskiego. Ma przypisanego wychowawcę (dokładnie jednego nauczyciela), oraz plan zajęć
     \item System oferuje integrację z istniejącymi rozwiązaniami dzienniczków elektronicznych LIBRUS oraz VULCAN na poziomie wyświetlania, modyfikacji oraz synchronizacji dwustronnej wprowadzonych ocen (tzn. wszelkie zmiany wprowadzone w dowolnym systemie powinny być odzwierciedlone w każdym z nich)
     % TODO: Co w przypadku konta administratora? Czy poniższe wymaganie jest wystarczająco dokładnie napisane?
     \item Każde konto uprawnione do wystawiania ocen może to zrobić tylko w ramach swoich przedmiotów i tylko dla uczniów uczęszczających na te zajęcia
@@ -238,7 +235,7 @@ odporność na błędy, że działa przez jakiś okres czasu
 \section{Zasoby}
 Oświadczamy, iż dysponujemy następującymi zasobami:
 \begin{itemize}
-    \item Pliki w formacie *.xls zawierające wszystkie plany zajęć klas oraz nauczycieli
+    \item Pliki w formacie *.xls zawierające wszystkie plany zajęć klas oraz plany zajęć nauczycieli
     \item Pliki w formacie *.xls zawierające spis uczniów z informacjami: imię, nazwisko, data urodzenia, pesel, adres, data rozpoczęcia szkoły, klasa, do której uczeń jest zapisany
     \item Pliki w formacie *.xls zawierające spis opiekunów uczniów z informacjami: imię i nazwisko opiekuna, pesel ucznia, adres, telefon kontaktowy 
     \item Pliki w formacie *.xls zawierające spis nauczycieli z informacjami: imię, nazwisko, adres, telefon kontaktowy, konto bankowe %TODO czy uwzględniamy wypłaty nauczycieli?
