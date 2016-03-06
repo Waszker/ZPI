@@ -190,7 +190,7 @@ Po zalogowaniu się jako rodzic:
 	\item Rodzic będzie miał możliwość uzupełniania ankiet przygotowanych przez administrację szkolną oraz podglądu wyłącznie udostępnionych przez administrację wyników
 	\item System umożliwi przesyłanie powiadomień informujących o zmianach pojawiających się w informacjach zawartych w panelu Rodzica. Powiadomienia będą dotyczyć:
 	\begin{enumerate}
-		\item 	ocen ucznia
+		\item ocen ucznia
 		\item nieobecności oraz spóźnień na zajęcia
 		\item nowych opłat
 		\item terminów opłat 
@@ -205,73 +205,39 @@ Po zalogowaniu się jako rodzic:
 
 Dodatkowo Rodzic może mieć rozszerzoną funkcjonalność konta w przypadku gdy jest przedstawicielem Komitetu Rodzicielskiego. W takim przypadku dodatkowo posiada możliwość:
 \begin{enumerate}
-	\item Organizowania zbiórki pienieżnej na cele komitetu rodzicielskiego
+	\item Organizowania zbiórki pieniężnej na cele komitetu rodzicielskiego
 	\item Układania ankiet skierowanych do pozostałych rodziców w klasie ucznia
 	\item Zwoływanie zebrań Komitetu Rodzicielskiego
 \end{enumerate}
-\paragraph{System kadr}
+\paragraph{System kadr} umożliwia prowadzenie ewidencji pracowników szkoły. W module wyróżnione zostały role nauczyciela oraz administratora.\\ Moduł przechowuje następujące informacje na temat pracowników:
 \begin{itemize}
-
-
-\item Zgłoszenie wniosku urlopowego\\
-Inicjator: nauczyciel
-\begin{enumerate}
-    \item Nauczyciel zgłasza potrzebę złożenia wniosku urlopowego
-    \item System udostępnia możliwość podania zakresu urlopu
-    \item Nauczyciel wprowadza dane do systemu i zatwierdza zmiany
-    \item System zapisuje zmiany
-\end{enumerate}
-    \item Zatwierdzenie wniosku urlopowego
-Inicjator: system
-\begin{enumerate}
-    \item Administrator otrzymuje powiadomienie o wniosku urlopowym
-    \item Administrator zatwierdza/odrzuca wniosek
-    \item System informuje nauczyciela o statusie wniosku
-\end{enumerate}
-\item Ustalenie zastępstwa
-Inicjator: administrator
-\begin{enumerate}
-    \item Administrator zgłasza potrzebę zastąpieniu nauczyciela na lekcjach
-    \item System udostępnia możliwość podania zakresu zastępstwa
-    \item Administrator wprowadza dane
-    \item System udostępnia informację o możliwej konfiguracji zastępstw
-    \item Administrator wybiera satysfakcjonujący model zastępstwa
-    \item System zapisuje zmiany i powiadamia nauczycieli o tym, iż są proszeni o uczestnictwo w zastępstwie
-\end{enumerate}
-    \item Integracja z systemem kadrowo-płacowym
-Inicjator: system
-\begin{enumerate}
-\item 
-\end{enumerate}
-
-\item Wyszukanie pracownika w systemie
-Inicjator: administrator
-\begin{enumerate}
-    \item Administrator zgłasza potrzebę wyszukania pracownika w systemie
-    \item System udostępnia możliwość wyszukiwania wśród pracowników względem danych użytkownika
-    \item Administrator wprowadza szukaną frazę
-    \item System udostępnia listę najtrafniejszych wyników wyszukiwania
-    \item Nauczyciel wybiera konkretny wynik
-    \item System udostępnia szczegółowe dane pracownika
-\end{enumerate}
-
-\item Zatrudnienie nowego pracownika
-Inicjator: administrator
-\begin{enumerate}
-    \item Administrator zgłasza potrzebę dodania nowego pracownika do systemu
-    \item System udostępnia możliwość podania jego danych osobowych
-    \item Administrator wprowadza dane do systemu i zatwierdza wybór
-    \item System zapisuje dane
-\end{enumerate}
-\item Zwolnienie pracownika
-Inicjator: administrator
-\begin{enumerate}
-    \item Administrator zgłasza potrzebę zmiany statusu pracownika na ,,zwolniony''
-    \item System udostępnia możliwość wyszukania pracownika
-    \item Administrator zmienia status pracownika zatwierdza wybór
-    \item System zapisuje dane
-\end{enumerate}
+\item dane personalne,
+\item stanowisko,
+\item staż pracy,
+\item typ umowy,
+\item ukończone kursy i szkolenia,
+\item wykorzystany urlop.
 \end{itemize}
+Informacje te są dostępne w całości dla administratora systemu, który może podjąć następujące akcje:
+\begin{enumerate}
+\item Zatrudnienie nowego nauczyciela:\\
+Do systemu dodany zostaje nowy nauczyciel o danych wprowadzonych przez administratora.
+\item Edycja danych pracownika,
+\item Zmiana statusu pracownika:\\
+Typy statusów: aktywny, urlopowany, niepracujący, zwolniony, emerytowany
+\item Rozpatrzenie wniosku urlopowego:\\
+Administrator może wyrazić zgodę na urlop lub odrzucić wniosek. Wtedy Nauczyciel otrzymuje stosowny komunikat o zmianie statusu wniosku.
+\item Wybór zastępstwa za nauczyciela:
+W przypadku, gdy nauczyciel przechodzi na urlop, system proponuje administratorowi możliwe zastępstwa godzin lekcyjnych nauczyciela przez innych ,,wolnych'' w tym momencie nauczycieli.
+\end{enumerate}
+
+Nauczyciel zatrudniony w szkole ma dostęp do informacji na swój temat zawartych w module kadr oraz do listy i podstawowych danych innych pracowników (imię, nazwisko, stanowisko).\\
+Nauczyciel ma możliwość wykonania następujących akcji:
+\begin{enumerate}
+\item Wyszukanie pracownika w systemie,
+\item Zgłoszenie wniosku urlopowego\\
+Akcja polega na określeniu zakresu urlopu i przesłaniu wniosku do administratora, którego zadaniem jest rozpatrzyć wniosek.
+\end{enumerate}
 
 % dostarczenie bazy danych zawierającej informacje o planie zajęć, kołach naukowych oraz uroczystościach szkolnych dostarczonych przez Zamawiającego w formie elektronicznej zgodnej z formatem pliku *.xls;
 \subsection{Wymagania niefunkcjonalne}
