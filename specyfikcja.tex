@@ -71,9 +71,37 @@ Przedmiotem Umowy jest dostarczenie, wykonanie, instalacja i wdrożenie systemu 
     \item Konta rodzica oraz ucznia mogą obejrzeć wystawione oceny a także wszystkie związane z nimi informacje.
 \end{enumerate}
 
-\paragraph{Moduł kont} \mbox{}\\
-
 \paragraph{Moduł administracji} \mbox{}\\
+Moduł ten służy zarządzaniu użytkownikami systemu a także spełnia rolę systemu kard, który umożliwia prowadzenie ewidencji pracowników szkoły.\\Dostęp do modułu mają jedynie wybrane osoby z administracji placówki oświatowej posiadające status administratora systemu. Konto administratora ma dostęp do następujących czynności i informacji oraz składa się z elementów wyszczególnionych w poniższym opisie:
+\begin{enumerate}
+\item W systemie administracji znajduje się lista wszystkich użytkowników, których administrator może swobodnie wyszukiwać i filtrować.
+\item System pozwala na dodanie nowego konta użytkownika do systemu: ucznia, nauczyciela lub rodzica. Przy tej operacji niezbędne jest podanie podstawowych danych ucznia, które będą dostępne w profilu ucznia.
+\item Konto administratora umożliwia edycję danych personalnych dowolnego użytkownika systemu.
+\item Istnieje możliwość usunięcia dowolnego użytkownika systemu.
+\item System oferuje możliwość edycji ocen wystawionych przez nauczyciela.
+
+\item Administrator może zmienić status pracy nauczyciela: aktywny, urlopowany, niepracujący, zwolniony, emerytowany, na zwolnieniu lekarskim.
+\item Administrator jest odpowiedzialny za rozpatrywanie wniosków urlopowych nauczycieli. Może wyrazić zgodę na urlop lub odrzucić wniosek. Wtedy Nauczyciel otrzymuje stosowny komunikat o zmianie statusu wniosku.
+\item Administrator ma pełny dostęp do edycji kalendarza szkolnego, klas, kół naukowych.
+\item System oferuje pomoc przy wyborze zastępstwa za nauczyciela:
+W przypadku, gdy nauczyciel przechodzi na urlop, system proponuje administratorowi możliwe zastępstwa godzin lekcyjnych nauczyciela przez innych ,,wolnych'' w tym momencie nauczycieli.
+\item Administrator ma dostęp do danych nauczycieli, również tych niedostępnych z innych części systemu:
+\begin{itemize}
+\item szczegółowe dane personalne,
+\item dane kontaktowe,
+\item aktualne wynagrodzenie,
+\item stanowisko,
+\item staż pracy,
+\item typ umowy,
+\item ukończone kursy i szkolenia,
+\item badania lekarskie,
+\item wykorzystany urlop.
+\end{itemize}
+\item System oferuje możliwość stworzenia nowego planu zajęć oraz modyfikacje istniejącego planu. Plan można wyeksportować do formatu .xls.
+ 
+\end{enumerate}
+
+\paragraph{Moduł kont} \mbox{}\\
 
 \begin{enumerate}
     \item System pozwala zalogować się po podaniu poprawnego loginu i hasła
@@ -108,14 +136,6 @@ Przedmiotem Umowy jest dostarczenie, wykonanie, instalacja i wdrożenie systemu 
             \item Umożliwia dodawanie informacji o sprawdzianach
             \item Umożliwia udostępnianie materiałów dydaktycznych dowolnego typu wybranym klasom
         \end{itemize}
-        \item \textbf{konto administratora}
-        \begin{itemize}
-             \item Pozwala na zakładanie nowych kont użytkowników i tworzenie powiązań między nimi (np. przypisanie konta ucznia do odpowiadającego mu rodzica)
-             \item Daje możliwość dodawania, edycji i usuwania klas oraz zapisanych do nich uczniów 
-             \item Umożliwia modyfikowanie planu zajęć
-             \item Pozwala na dodawanie i usuwanie z kalendarza informacji o nieobecności nauczycieli oraz wycieczkach szkolnych
-             \item Umożliwia zmianę ocen uczniów
-         \end{itemize} 
         % TODO: Czy konto SUPERUSER jest nam niezbędne?
         %\item \textbf{konto administratora głównego \"SUPERUSER\"} - konto o nieograniczonych przywilejach
     \end{itemize}
@@ -295,34 +315,7 @@ Po zalogowaniu się jako uczeń:
 	\end{enumerate}	
 \end{enumerate}
 
-\paragraph{System administracji} służy zarządzaniu użytkownikami systemu a także spełnia rolę systemu kard, który umożliwia prowadzenie ewidencji pracowników szkoły.\\Dostęp do modułu mają jedynie wybrane osoby z administracji placówki oświatowej posiadające status administratora systemu. Konto administratora ma dostęp do następujących czynności i informacji oraz składa się z elementów wyszczególnionych w poniższym opisie:
-\begin{enumerate}
-\item W systemie administracji znajduje się lista wszystkich użytkowników, których administrator może swobodnie wyszukiwać i filtrować.
-\item System pozwala na dodanie nowego konta użytkownika do systemu: ucznia, nauczyciela lub rodzica. Przy tej operacji niezbędne jest podanie podstawowych danych ucznia, które będą dostępne w profilu ucznia.
-\item Konto administratora umożliwia edycję danych personalnych dowolnego użytkownika systemu.
-\item Istnieje możliwość usunięcia dowolnego użytkownika systemu.
-\item System oferuje możliwość edycji ocen wystawionych przez nauczyciela.
 
-\item Administrator może zmienić status pracy nauczyciela: aktywny, urlopowany, niepracujący, zwolniony, emerytowany, na zwolnieniu lekarskim.
-\item Administrator jest odpowiedzialny za rozpatrywanie wniosków urlopowych nauczycieli. Może wyrazić zgodę na urlop lub odrzucić wniosek. Wtedy Nauczyciel otrzymuje stosowny komunikat o zmianie statusu wniosku.
-\item Administrator ma pełny dostęp do edycji kalendarza szkolnego, klas, kół naukowych.
-\item System oferuje pomoc przy wyborze zastępstwa za nauczyciela:
-W przypadku, gdy nauczyciel przechodzi na urlop, system proponuje administratorowi możliwe zastępstwa godzin lekcyjnych nauczyciela przez innych ,,wolnych'' w tym momencie nauczycieli.
-\item Administrator ma dostęp do danych nauczycieli, również tych niedostępnych z innych części systemu:
-\begin{itemize}
-\item szczegółowe dane personalne,
-\item dane kontaktowe,
-\item aktualne wynagrodzenie,
-\item stanowisko,
-\item staż pracy,
-\item typ umowy,
-\item ukończone kursy i szkolenia,
-\item badania lekarskie,
-\item wykorzystany urlop.
-\end{itemize}
-\item System oferuje możliwość stworzenia nowego planu zajęć oraz modyfikacje istniejącego planu. Plan można wyeksportować do formatu .xls.
- 
-\end{enumerate}
 
 
 % dostarczenie bazy danych zawierającej informacje o planie zajęć, kołach naukowych oraz uroczystościach szkolnych dostarczonych przez Zamawiającego w formie elektronicznej zgodnej z formatem pliku *.xls;
