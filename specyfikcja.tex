@@ -58,6 +58,95 @@ Przedmiotem Umowy jest dostarczenie, wykonanie, instalacja i wdrożenie systemu 
 \subsection{Wymagania funkcjonalne}
 
 \paragraph{Moduł dydaktyki} \mbox{}\\
+\begin{enumerate}
+\item Materiały dydaktyczne
+\begin{enumerate}
+  \item pliki dowolnego typu udostępniane w aplikacji
+  \item jednorazowo udostępniane dane nie mogą przekraczać 10 MB
+  \item nauczyciel ma możliwość:
+  \begin{enumerate}
+    \item pobierania
+    \item dodawania na stronę przedmiotu, którego uczy
+    \item usuwania
+  \end{enumerate}
+  \item uczeń ma możliwość:
+  \begin{enumerate}
+    \item pobierania
+  \end{enumerate}
+\end{enumerate}
+  \item Plan zajęć klasy  
+  \begin{enumerate}
+  \item może być wyświetlany przez dowolny typ konta
+    \item zawiera informacje o przedmiotach:
+    \begin{enumerate}
+      \item godzinach rozpoczęcia
+      \item godzinach zakończenia
+      \item sali, w której się odbywają
+      \item nauczycielu prowadzącym zajęcia
+    \end{enumerate}
+\end{enumerate}
+  \item Plan zajęć nauczyciela  
+  \begin{enumerate}
+  \item może być wyświetlany przez dowolny typ konta
+    \item zawiera informacje o przedmiotach:
+    \begin{enumerate}
+      \item godzinach rozpoczęcia
+      \item godzinach zakończenia
+      \item sali, w której się odbywają
+      \item klasie, z którą nauczyciel ma zajęcia
+    \end{enumerate}
+\end{enumerate}
+\item Kalendarium 
+  \begin{enumerate}
+    \item zawiera informacje o wydarzeniach szkolnych takich jak:
+    \begin{enumerate}
+      \item apele
+      \item uroczystości
+      \item dniach wolnych od zajęć dydaktycznych      
+    \end{enumerate}
+    \item każde wydarzenie posiada informację o:
+    \begin{enumerate}
+      \item dacie
+      \item godzinie rozpoczęcia
+      \item godzinie zakończenia
+      \item lokalizacji
+      \item rodzaju wydarzenia w postaci notki nie dłuższej niż 100 znaków
+    \end{enumerate}
+\end{enumerate}
+\item Kalendarz ucznia 
+  \begin{enumerate}
+    \item jest zbiorem spersonalizowanych wydarzeń każdego ucznia
+    \item Zawiera informacje o:
+    \begin{enumerate}
+      \item zastępstwach nauczycieli, z którymi uczeń ma zajęcia
+      \item sprawdzianach
+      \item kołach naukowych, do których zapisany jest uczeń
+    \end{enumerate}
+\end{enumerate}
+\item Klasa
+  \begin{enumerate}
+    \item jest zbiorem uczniów
+    \item posiada swoją nazwę oznaczaną:
+    \begin{enumerate}
+      \item jedną cyfrą (rok nauki)
+      \item jedną dużą literą alfabetu łacińskiego
+    \end{enumerate}
+    \item ma przypisanego:
+    \begin{enumerate}
+      \item wychowawcę (dokładnie jednego nauczyciela)
+      \item plan zajęć
+    \end{enumerate}
+\end{enumerate}
+\item System
+  \begin{enumerate}
+    \item oferuje integrację z istniejącymi rozwiązaniami dzienniczków elektronicznych LIBRUS oraz VULCAN na poziomie:
+    \begin{enumerate}
+      \item wyświetlania
+      \item modyfikacji
+      \item synchronizacji dwustronnej wprowadzonych ocen (tzn. wszelkie zmiany wprowadzone w dowolnym systemie powinny być odzwierciedlone w każdym z nich)
+    \end{enumerate}
+\end{enumerate}
+\end{enumerate}
 
 \paragraph{Moduł ocen} \mbox{}\\
 \begin{enumerate}
@@ -120,7 +209,7 @@ Przedmiotem Umowy jest dostarczenie, wykonanie, instalacja i wdrożenie systemu 
             \item Umożliwia dostęp do prywatnego kalendarza zawierającego informacje o sprawdzianach, kołach naukowych, do których uczeń jest zapisany i zastępstwach nauczycieli, z którymi uczeń ma zajęcia
             \item Daje dostęp do materiałów dydaktycznych zamieszczanych przez nauczycieli
         \end{itemize}
-        \item \textbf{konto rodzica} 
+        \item \textbf{konto rodzica}
         \begin{itemize}
             \item Jest przypisane do co najmniej jednego ucznia
             \item Do jednego konta ucznia jest przypisane co najmniej jedno konto rodzica
@@ -130,7 +219,7 @@ Przedmiotem Umowy jest dostarczenie, wykonanie, instalacja i wdrożenie systemu 
             \item Zawiera moduł opłat %TODO ?
         \end{itemize}
         %TODO: Czy pisać o liście przedmiotów prowadzonych przez nauczyciela?
-        \item \textbf{konto nauczyciela} 
+        \item \textbf{konto nauczyciela}
         \begin{itemize}
             \item Zawiera informacje o imieniu, nazwisku, adresie nauczyciela
             \item Jest przypisane do co najmniej jednego przedmiotu
@@ -143,22 +232,15 @@ Przedmiotem Umowy jest dostarczenie, wykonanie, instalacja i wdrożenie systemu 
         \item \textbf{konto administratora}
         \begin{itemize}
              \item Pozwala na zakładanie nowych kont użytkowników i tworzenie powiązań między nimi (np. przypisanie konta ucznia do odpowiadającego mu rodzica)
-             \item Daje możliwość dodawania, edycji i usuwania klas oraz zapisanych do nich uczniów 
+             \item Daje możliwość dodawania, edycji i usuwania klas oraz zapisanych do nich uczniów
              \item Umożliwia modyfikowanie planu zajęć
              \item Pozwala na dodawanie i usuwanie z kalendarza informacji o nieobecności nauczycieli oraz wycieczkach szkolnych
              \item Umożliwia zmianę ocen uczniów
-         \end{itemize} 
+         \end{itemize}
         % TODO: Czy konto SUPERUSER jest nam niezbędne?
         %\item \textbf{konto administratora głównego \"SUPERUSER\"} - konto o nieograniczonych przywilejach
     \end{itemize}
-    \item Materiały dydaktyczne to pliki dowolnego typu udostępniane w aplikacji. Nauczyciel ma możliwość pobierania, dodawania i usuwania ich, uczeń ma możliwość pobierania ich. Nauczyciel ma możliwość udostępniania materiałów na stronę przedmiotu, którego uczy. Jednorazowo wrzucone dane nie mogą przekraczać 10 MB.
-    % TODO: Issue #002
-    \item Plan zajęć klasy zawiera informacje o przedmiotach: godzinach ich rozpoczęcia i zakończenia, sali, w której się odbywają oraz nauczycielu prowadzącym zajęcia. Może być wyświetlany przez dowolny typ konta.
-    \item Plan zajęć nauczyciela zawiera informacje o przedmiotach: godzinach ich rozpoczęcia i zakończenia, sali, w której się odbywają oraz klasie, z którą ma zajęcia. Może być wyświetlany przez dowolny typ konta.
-    \item Kalendarium zawiera informacje o wydarzeniach szkolnych takich jak apele i uroczystości, a także dniach wolnych od zajęć dydaktycznych. Każde takie wydarzenie oprócz swojej daty posiada informację o godzinie rozpoczęcia i zakończenia, lokalizacji oraz krótką informację w postaci notki nie dłuższej niż 100 znaków.
-    \item Kalendarz ucznia jest zbiorem spersonalizowany wydarzeń każdego ucznia. Zawiera informacje o zastępstwach nauczycieli, z którymi uczeń ma zajęcia, informacje o sprawdzianach (ich data oraz przedmiot) oraz o kołach naukowych, do których zapisany jest uczeń
-    \item Klasa będąca zbiorem uczniów, posiada swoją nazwę oznaczaną jedną cyfrą (rok nauki) oraz jedną dużą literą alfabetu łacińskiego. Ma przypisanego wychowawcę (dokładnie jednego nauczyciela), oraz plan zajęć
-    \item System oferuje integrację z istniejącymi rozwiązaniami dzienniczków elektronicznych LIBRUS oraz VULCAN na poziomie wyświetlania, modyfikacji oraz synchronizacji dwustronnej wprowadzonych ocen (tzn. wszelkie zmiany wprowadzone w dowolnym systemie powinny być odzwierciedlone w każdym z nich)
+
     % TODO: Co w przypadku konta administratora? Czy poniższe wymaganie jest wystarczająco dokładnie napisane?
     \item Każde konto uprawnione do wystawiania ocen może to zrobić tylko w ramach swoich przedmiotów i tylko dla uczniów uczęszczających na te zajęcia
     \item Każda ocena powinna być wartością całkowitoliczbową z zakresu 1-6 z ewentualnym modyfikatorem w postaci symbolu "-" lub "+" występującym raz na samym końcu wartości oceny, posiadać przypisaną wagę (domyślnie ustawioną jako 1), zawierać krótką informację o powodzie jej wystawienia nie dłuższą niż 60 znaków a także datę wystawienia.
@@ -194,7 +276,7 @@ Po zalogowaniu się jako rodzic:
 				\item powiadomienia o otrzymanych świadectwach
 				\item powiadomienia o nadchodzących egzaminach
 			\end{enumerate}
-		\end{enumerate} 
+		\end{enumerate}
 	\end{enumerate}
 	\item System umożliwia wybór konta Ucznia, dla którego wdrożone będą poniższe funkcjonalności modułu Rodzica w przypadku, gdy do jednego konta Rodzica przypisane będzie więcej niż jedno konto ucznia
 	\item Rodzic będzie miał możliwość podglądu osiągnięć ucznia, uwag dotyczących jego sprawowania. Rodzic będzie miał wgląd do następujących elementów:
@@ -231,23 +313,23 @@ Po zalogowaniu się jako rodzic:
 	\begin{enumerate}
 		\item Liczba godzin lekcyjnych
 		\item Zakres materiału
-		\item Realizowane wymagania egzaminacyjne 
+		\item Realizowane wymagania egzaminacyjne
 	\end{enumerate}
-	\item Poprzez panel Rodzic będzie miał dostęp do informatorów udostępnianych przez CKE dotyczących egazminu, które zdawać będzie uczeń kończąc szkołę 
+	\item Poprzez panel Rodzic będzie miał dostęp do informatorów udostępnianych przez CKE dotyczących egazminu, które zdawać będzie uczeń kończąc szkołę
 	\item Rodzic będzie miał możliwość uzupełniania ankiet przygotowanych przez administrację szkolną oraz podglądu wyłącznie udostępnionych przez administrację wyników
 	\item System umożliwi przesyłanie powiadomień informujących o zmianach pojawiających się w informacjach zawartych w panelu Rodzica. Powiadomienia będą dotyczyć:
 	\begin{enumerate}
 		\item ocen ucznia
 		\item nieobecności oraz spóźnień na zajęcia
 		\item nowych opłat
-		\item terminów opłat 
+		\item terminów opłat
 		\item ankiet
 		\item zebrań rodziców
 		\item wydarzeń i uroczystości szkolnych
 		\item przyznanych stypendiów
 		\item otrzymanych świadectw
 		\item nadchodzących egzaminów
-	\end{enumerate}	
+	\end{enumerate}
 \end{enumerate}
 
 Dodatkowo Rodzic może mieć rozszerzoną funkcjonalność konta w przypadku gdy jest przedstawicielem Komitetu Rodzicielskiego. W takim przypadku dodatkowo posiada możliwość:
@@ -278,7 +360,7 @@ Po zalogowaniu się jako uczeń:
 				\item powiadomienia o otrzymanych świadectwach
 				\item powiadomienia o nadchodzących egzaminach
 			\end{enumerate}
-		\end{enumerate} 
+		\end{enumerate}
 	\end{enumerate}
 	\item Uczeń będzie miał możliwość podglądu swoich osiągnięć, oraz uwag dotyczących jego sprawowania. Będzie miał wgląd do następujących elementów:
 	\begin{enumerate}
@@ -308,23 +390,23 @@ Po zalogowaniu się jako uczeń:
 	\begin{enumerate}
 		\item Liczba godzin lekcyjnych
 		\item Zakres materiału
-		\item Realizowane wymagania egzaminacyjne 
+		\item Realizowane wymagania egzaminacyjne
 	\end{enumerate}
-	\item Poprzez panel Uczeń będzie miał dostęp do informatorów udostępnianych przez CKE dotyczących egazminu, które zdawać będzie kończąc szkołę 
+	\item Poprzez panel Uczeń będzie miał dostęp do informatorów udostępnianych przez CKE dotyczących egazminu, które zdawać będzie kończąc szkołę
 	\item Uczeń będzie miał możliwość uzupełniania ankiet przygotowanych przez administrację szkolną oraz podglądu wyłącznie udostępnionych przez administrację wyników
 	\item System umożliwi przesyłanie powiadomień informujących o zmianach pojawiających się w informacjach zawartych w panelu Uczeń. Powiadomienia będą dotyczyć:
 	\begin{enumerate}
 		\item ocen ucznia
 		\item nieobecności oraz spóźnień na zajęcia
 		\item nowych opłat
-		\item terminów opłat 
+		\item terminów opłat
 		\item ankiet
 		\item zebrań rodziców
 		\item wydarzeń i uroczystości szkolnych
 		\item przyznanych stypendiów
 		\item otrzymanych świadectw
 		\item nadchodzących egzaminów
-	\end{enumerate}	
+	\end{enumerate}
 \end{enumerate}
 
 \paragraph{System administracji} służy zarządzaniu użytkownikami systemu a także spełnia rolę systemu kard, który umożliwia prowadzenie ewidencji pracowników szkoły.\\Dostęp do modułu mają jedynie wybrane osoby z administracji placówki oświatowej posiadające status administratora systemu. Konto administratora ma dostęp do następujących czynności i informacji oraz składa się z elementów wyszczególnionych w poniższym opisie:
@@ -389,7 +471,7 @@ W przypadku, gdy nauczyciel przechodzi na urlop, system proponuje administratoro
 		\item moc obliczeniowa 10xCPU Intel Penitum II Xeon
 	\end{enumerate}
 
-	
+
 \end{enumerate}
 
 
@@ -401,7 +483,7 @@ W przypadku, gdy nauczyciel przechodzi na urlop, system proponuje administratoro
 	\item Wykonawca zobowiązuję się usunąć awarię w następującym czasie od momentu zgłoszenia przez Zamawiającego:
 	\begin{enumerate}
 		\item dla błędów krytycznych - \textbf{12h}
-		\item dla błędów ważnych - \textbf{48h} 
+		\item dla błędów ważnych - \textbf{48h}
 		\item dla błędów zwykłych - \textbf{7dni}
 	\end{enumerate}
 
@@ -413,13 +495,13 @@ W przypadku, gdy nauczyciel przechodzi na urlop, system proponuje administratoro
 	\end{enumerate}
 
 	\item Zaplanowane przerwy działania systemu mogą mieć miejsce w dni wolne od pracy lub w dni robocze w godzinach 1:00-6:00. Każda planowana przerwa w systemie powinna zostać zgłoszona Zamawiającemu z wyprzedzeniem 4 dni.
-	
+
 \end{enumerate}
 \subsection{Sposób wdrożenia}
 % Łukasz
 \paragraph{Etapy}
 \begin{enumerate}
-\item 
+\item
 \end{enumerate}
 \paragraph{Przebieg szkoleń}
 W ramach wdrożenia systemu odbędzie się cykl szkoleń przeznaczonych dla uczniów, rodziców, nauczycieli i administratorów. Szkolenia będą prowadzone w salach szkolnych przeznaczonych do nauki informatyki - wyposażone w stanowiska komputerowe, projektor oraz tablicę do rysowania.
@@ -440,12 +522,12 @@ odporność na błędy, że działa przez jakiś okres czasu
 \section{Dokumentacja systemu}
 % Pzypadkiem zrobiliśmy też to
 \paragraph{Dokumentacja użytkownika} komplet dostarczonej dokumentacji będzie zawierać podręczniki dla użytkowników systemu zgodnie ze zdefiniowanymi w Systemie rolami. Podręcznik będzie zawierał wykaz czynności wykonywanych przez użytkownika pełniącego ustaloną rolę oraz szczegółowy sposób realizacji tych czynności (kolejne kroki) wraz ze zrzutami ekranów. Dokumentacja zostanie dostarczona w formie elektronicznej umożliwiającej wydruk.
-\paragraph{Dokumentacja administratora}  w skład dokumentacji technicznej administratora wejdą dokumenty dotyczące następujących zagadnień: 
+\paragraph{Dokumentacja administratora}  w skład dokumentacji technicznej administratora wejdą dokumenty dotyczące następujących zagadnień:
 \begin{enumerate}
 	\item użyte w projekcie oprogramowanie systemowe i narzędziowe, ze wskazaniem wersji oraz sposobu konfiguracji
-	\item lista wykorzystanych bibliotek wraz ze wskazaniem wersji; 
-	\item sposób instalacji i konfiguracji wszystkich składników sprzętu i oprogramowania; 
-	\item dokumentacja struktur baz danych oraz konfiguracji poszczególnych elementów: serwerów, urządzeń sieciowych, aplikacji. 
+	\item lista wykorzystanych bibliotek wraz ze wskazaniem wersji;
+	\item sposób instalacji i konfiguracji wszystkich składników sprzętu i oprogramowania;
+	\item dokumentacja struktur baz danych oraz konfiguracji poszczególnych elementów: serwerów, urządzeń sieciowych, aplikacji.
 	\item procedury tworzenia kopii i odtwarzania poszczególnych elementów Systemu.
 \end{enumerate}
 \paragraph{Testy akceptacyjne} zostaną opracowane przez Wykonawcę. Plan i scenariusze testów będą zgodne z powszechnie stosowanymu zasadami i praktykami. Przygotowany plan testów będzie określał:
@@ -454,14 +536,14 @@ odporność na błędy, że działa przez jakiś okres czasu
 	\item kolejność wykonywania scenariuszy testowych
 	\item kryteria sukcesu dla poszczególnych scenariuszy
 \end{enumerate}
-Scenariusze będą pokrywały wszystkie wyspecyfikowane funkcje systemu. Każdy scenariusz określać będzie: dane, które muszą być wprowadzone do Systemu przed uruchomieniem scenariusza; kolejność czynności, wykonywanych w czasie testu oraz dane, wprowadzane do Systemu w czasie testu; oczekiwaną reakcję Systemu na wykonane czynności i wprowadzone dane. Dane testowe (do przeprowadzenia testów akceptacyjnych) w tym wszelkie materiały eksploatacyjne dostarczone będą przez Wykonawcę. 
+Scenariusze będą pokrywały wszystkie wyspecyfikowane funkcje systemu. Każdy scenariusz określać będzie: dane, które muszą być wprowadzone do Systemu przed uruchomieniem scenariusza; kolejność czynności, wykonywanych w czasie testu oraz dane, wprowadzane do Systemu w czasie testu; oczekiwaną reakcję Systemu na wykonane czynności i wprowadzone dane. Dane testowe (do przeprowadzenia testów akceptacyjnych) w tym wszelkie materiały eksploatacyjne dostarczone będą przez Wykonawcę.
 
 \section{Zasoby}
 Oświadczamy, iż dysponujemy następującymi zasobami:
 \begin{itemize}
     \item Pliki w formacie *.xls zawierające wszystkie plany zajęć klas oraz plany zajęć nauczycieli
     \item Pliki w formacie *.xls zawierające spis uczniów z informacjami: imię, nazwisko, data urodzenia, pesel, adres, data rozpoczęcia szkoły, klasa, do której uczeń jest zapisany
-    \item Pliki w formacie *.xls zawierające spis opiekunów uczniów z informacjami: imię i nazwisko opiekuna, pesel ucznia, adres, telefon kontaktowy 
+    \item Pliki w formacie *.xls zawierające spis opiekunów uczniów z informacjami: imię i nazwisko opiekuna, pesel ucznia, adres, telefon kontaktowy
     \item Pliki w formacie *.xls zawierające spis nauczycieli z informacjami: imię, nazwisko, adres, telefon kontaktowy, konto bankowe %TODO czy uwzględniamy wypłaty nauczycieli?
 \end{itemize}
 
