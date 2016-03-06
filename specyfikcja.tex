@@ -50,11 +50,9 @@ Projekt składa się z następujących modułów
 Przedmiotem Umowy jest dostarczenie, wykonanie, instalacja i wdrożenie systemu \textit{eSzkoła}, obejmuje w szczególności:
 %TODO dodać licencję
 \begin{enumerate}
-    \item wytworzenie, dostarczenie, zainstalowanie, skonfigurowanie i uruchomienie Systemu na zasobach sprzętowych wskazanych przez Zamawiającego, zgodnego z obowiązującym
-    prawem;
+    \item wytworzenie, dostarczenie, zainstalowanie, skonfigurowanie i uruchomienie Systemu na zasobach sprzętowych wskazanych przez Zamawiającego, zgodnego z obowiązującym prawem;
     \item dostarczenie bazy danych zawierającej informacje dostarczone przez Zamawiającego w plikach zgodnych z formatem *.xls;
-    \item skonfigurowanie i zintegrowanie dostarczanego Systemu do współpracy z systemami dzienniczka elektronicznego Librus i Vulcan
-    a także zewnętrznego systemu kadr %TODO Flis team
+    \item skonfigurowanie i zintegrowanie dostarczanego Systemu do współpracy z systemami dzienniczka elektronicznego Librus i Vulcan a także zewnętrznego systemu kadr
 \end{enumerate}
 
 \subsection{Wymagania funkcjonalne}
@@ -112,14 +110,12 @@ Przedmiotem Umowy jest dostarczenie, wykonanie, instalacja i wdrożenie systemu 
     \item System oferuje integrację z istniejącymi rozwiązaniami dzienniczków elektronicznych LIBRUS oraz VULCAN na poziomie wyświetlania, modyfikacji oraz synchronizacji dwustronnej wprowadzonych ocen (tzn. wszelkie zmiany wprowadzone w dowolnym systemie powinny być odzwierciedlone w każdym z nich)
     % TODO: Co w przypadku konta administratora? Czy poniższe wymaganie jest wystarczająco dokładnie napisane?
     \item Każde konto uprawnione do wystawiania ocen może to zrobić tylko w ramach swoich przedmiotów i tylko dla uczniów uczęszczających na te zajęcia
-    \item Każda ocena powinna być wartością całkowitoliczbową z zakresu 1-6 z ewentualnym modyfikatorem w postaci symbolu \"-\" lub \"+\" występującym raz na samym końcu wartości oceny, posiadać przypisaną wagę (domyślnie ustawioną jako 1), zawierać krótką informację o powodzie jej wystawienia nie dłuższą niż 60 znaków a także datę wystawienia.
+    \item Każda ocena powinna być wartością całkowitoliczbową z zakresu 1-6 z ewentualnym modyfikatorem w postaci symbolu "-" lub "+" występującym raz na samym końcu wartości oceny, posiadać przypisaną wagę (domyślnie ustawioną jako 1), zawierać krótką informację o powodzie jej wystawienia nie dłuższą niż 60 znaków a także datę wystawienia.
     \item Oceny wprowadzone do systemu mogą być usuwane oraz modyfikowane. Modyfikacja może obejmować zmiany dowolnej wartości poza datą wystawienia oceny
     \item Możliwe jest wyliczenie średniej ważonej na podstawie zgromadzonych przez ucznia ocen i wyświetlenie jej jako proponowanej oceny końcowej
     \item Konto nauczyciela posiada możliwość zaakceptowania proponowanej oceny końcowej wyliczonej przez system jak również wprowadzenie własnej wartości
     \item Konta rodzica oraz ucznia mogą obejrzeć wystawione oceny a także wszystkie związane z nimi informacje
 \end{enumerate}
-%TODO podział funkcjonalnych:
-system kadr: Dragan, Flis
 
 \paragraph{Moduł rodzica} \mbox{}\\
 Po zalogowaniu się jako rodzic:
@@ -149,7 +145,7 @@ Po zalogowaniu się jako rodzic:
 			\end{enumerate}
 		\end{enumerate} 
 	\end{enumerate}
-	\item System umożliwia wybór konta Ucznia, dla którego zaimplementowane będą poniższe funkcjonalności modułu Rodzica w przypadku, gdy do jednego konta Rodzica przypisane będzie więcej niż jedno konto ucznia
+	\item System umożliwia wybór konta Ucznia, dla którego wdrożone będą poniższe funkcjonalności modułu Rodzica w przypadku, gdy do jednego konta Rodzica przypisane będzie więcej niż jedno konto ucznia
 	\item Rodzic będzie miał możliwość podglądu osiągnięć ucznia, uwag dotyczących jego sprawowania. Rodzic będzie miał wgląd do następujących elementów:
 	\begin{enumerate}
 		\item Oceny
@@ -209,6 +205,77 @@ Dodatkowo Rodzic może mieć rozszerzoną funkcjonalność konta w przypadku gdy
 	\item Układania ankiet skierowanych do pozostałych rodziców w klasie ucznia
 	\item Zwoływanie zebrań Komitetu Rodzicielskiego
 \end{enumerate}
+
+\paragraph{Moduł ucznia} \mbox{}\\
+Po zalogowaniu się jako uczeń:
+\begin{enumerate}
+	\item Użytkownik ma możliwość zmiany ustawień swojego konta. Użytkownik ma możliwość dokonania konfiguracji następujących elementów:
+	\begin{enumerate}
+		\item Numer telefonu
+		\item Adres email
+		\item Adres do korespondencji
+		\item Powiadomienia wysyłane przez aplikację tj.:
+		\begin{enumerate}
+			\item Użytkownik powinien mieć wybór sposobu, w którym otrzymywać będzie powiadomienia (SMS/email)
+			\item Użytkownik powinien mieć wybór powiadomień, które będzie otrzymywać. Możliwość konfiguracji powinna dotyczyć osobno każdego ze sposobów przesyłania powiadomień. Powiadomienia, które mogą być przesyłane do Użytkownika są następujące:
+			\begin{enumerate}
+				\item powiadomienia o wystawionych ocenach
+				\item powiadomienia o pojawieniu się nowej ankiety
+				\item powiadomienia o zebraniach rodziców
+				\item powiadomienia o nowych wydarzeniach i uroczystościach szkolnych
+				\item powiadomienia o przyznanych stypendiach
+				\item powiadomienia o otrzymanych świadectwach
+				\item powiadomienia o nadchodzących egzaminach
+			\end{enumerate}
+		\end{enumerate} 
+	\end{enumerate}
+	\item Uczeń będzie miał możliwość podglądu swoich osiągnięć, oraz uwag dotyczących jego sprawowania. Będzie miał wgląd do następujących elementów:
+	\begin{enumerate}
+		\item Oceny
+		\item Obecności
+		\item Spóźnienia
+	\end{enumerate}
+	\item Ponadto uczeń będzie miał dostęp do informacji o swoich szczególnych osiągnięciach:
+	\begin{enumerate}
+		\item Wygrane w konkursach naukowych
+		\item Wygrane w zawodach sportowych
+		\item Osiągnięcia artystyczne
+	\end{enumerate}
+	\item Uczeń będzie miał możliwość podglądu planu zajęć z naniesionymi na niego aktualny zmianami  (np. uroczystości szkolne, nieobecności nauczycieli)
+	\item Uczeń będzie miał podawane informacje o terminach planowanych prac klasowych oraz o zakresie materiału na nich obowiązującym
+	\item Uczeń będzie zaznajomiony z informacjami o samorządzie klasowym - o pełnionych przez niego funkcjach i zakresie obowiązków
+	\item Uczeń będzie miał wgląd do wydarzeń organizowanych w szkole wliczając w to:
+	\begin{enumerate}
+		\item uroczystości szkolne
+		\item organizowane wycieczki
+		\item wydarzenia sportowe
+	\end{enumerate}
+	\item W panelu ucznia zamieszczone będą informacje na temat godzin dyżurów nauczycieli
+	\item Uczeń będzie widział przyznane mu stypendia oraz wystawione świadectwa
+	\item Uczeń będzie miał dostęp do informacji o kołach naukowych (zainteresowań) do których należy.
+	\item Katalog przedmiotów obowiązkowych w przebiegu edukacji szkolnej będzie udostępniony Uczniowi, zawarte w nim informacje dotyczące pojedynczego przedmiotu będą następujące:
+	\begin{enumerate}
+		\item Liczba godzin lekcyjnych
+		\item Zakres materiału
+		\item Realizowane wymagania egzaminacyjne 
+	\end{enumerate}
+	\item Poprzez panel Uczeń będzie miał dostęp do informatorów udostępnianych przez CKE dotyczących egazminu, które zdawać będzie kończąc szkołę 
+	\item Uczeń będzie miał możliwość uzupełniania ankiet przygotowanych przez administrację szkolną oraz podglądu wyłącznie udostępnionych przez administrację wyników
+	\item System umożliwi przesyłanie powiadomień informujących o zmianach pojawiających się w informacjach zawartych w panelu Uczeń. Powiadomienia będą dotyczyć:
+	\begin{enumerate}
+		\item ocen ucznia
+		\item nieobecności oraz spóźnień na zajęcia
+		\item nowych opłat
+		\item terminów opłat 
+		\item ankiet
+		\item zebrań rodziców
+		\item wydarzeń i uroczystości szkolnych
+		\item przyznanych stypendiów
+		\item otrzymanych świadectw
+		\item nadchodzących egzaminów
+	\end{enumerate}	
+\end{enumerate}
+
 \paragraph{System kadr} umożliwia prowadzenie ewidencji pracowników szkoły. W module wyróżnione zostały role nauczyciela oraz administratora.\\ Moduł przechowuje następujące informacje na temat pracowników:
 \begin{itemize}
 \item dane personalne,
