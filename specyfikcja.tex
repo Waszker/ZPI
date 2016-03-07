@@ -303,10 +303,48 @@ W przypadku, gdy nauczyciel przechodzi na urlop, system proponuje administratoro
 \end{enumerate}
 \subsection{Sposób wdrożenia}
 % Łukasz
+Wymagane jest, aby Wykonawca zarządzał procesem wdrożenia tak, aby możliwe było nadzorowanie nie tylko rezultatów wdrożenia, ale również całego procesu.
 \paragraph{Etapy}
 \begin{enumerate}
-\item
+\item \textbf{Etap Planowania.} 
+Na Etapie Planowania Wykonawca, wykorzystując przekazane wymagania dla Systemu, opracuje Projekt Wykonawczy Wdrożenia Systemu, Dokumentację Testową oraz Dokumentację Zarządczą. Opracowane na tym etapie dokumenty muszą opisywać oba środowiska: testowe i produkcyjne. Kompletność i spójność dokumentów Etapu Planowania będzie następnie weryfikowana podczas kolejnych etapów procesu wdrożenia.
+Produkty etapu:
+\begin{enumerate}
+\item \textbf{Projekt Wykonawczy Wdrożenia Systemu.}
+Dokument będzie opisywał szczegółowo architekturę systemu, sposób konfiguracji i funkcje poszczególnych elementów systemu oraz sposób realizacji wymagań przez system. W szczególności projekt będzie zawierał specyfikacje oprogramowania i licencji, które zostaną dostarczone podczas Etapu Dostawy Oprogramowania i Licencji. 
+\item \textbf{Plan i Scenariusze Testów Akceptacyjnych Wdrożenia Systemu.} 
+Element Dokumentacji Testowej. Wykonawca opracuje Plan i Scenariusze Testów Akceptacyjnych Wdrożenia Systemu. Zakres opracowanych scenariuszy musi umożliwić jednoznaczną weryfikację spełnienia wymagań dla Systemu określonych przez Zamawiającego.
+\item \textbf{Harmonogram Wdrożenia Systemu.}
+Element Dokumentacji Zarządczej. Harmonogram zostanie opracowany przez Wykonawcę. W szczególności harmonogram musi uwzględniać harmonogram i powiązania wynikające z wdrożenia Systemu.
+\item \textbf{Macierz Odpowiedzialności.}
+Element Dokumentacji Zarządczej. Wykonawca opracuje Macierz Odpowiedzialności, której celem jest przypisanie odpowiedzialności za zidentyfikowane obszary i zadania wykonywane w ramach wdrożenia do konkretnych podmiotów i osób. Obszary i zadania muszą zostać zdefiniowane do takiego poziomu szczegółowości, aby przypisanie strony za nie odpowiedzialnej było jednoznaczne.
 \end{enumerate}
+\item \textbf{Etap Dostawy Oprogramowania i Licencji.}
+Zakres prac Wykonawcy obejmie dostawę niezbędnych licencji wraz z nośnikami oprogramowania wskazanego w Projekcie Wykonawczym Wdrożenia Systemu. Dopuszcza się dostarczenie licencji i oprogramowania w kilku kolejnych transzach, jeżeli jest to zgodne z Harmonogramem Wdrożenia Systemu. Produkty etapu:
+\begin{enumerate}
+\item Licencje na oprogramowanie wraz z dokumentacją producenta.
+\item Dostarczone nośniki z oprogramowaniem.
+\item Podpisany Protokół Odbioru Ilościowego Oprogramowania zawarty w Załączniku nr 6.
+\end{enumerate}
+\item \textbf{Etap Instalacji Oprogramowania i Wdrożenia Systemu.}
+Zakres prac Wykonawcy obejmuje instalację i konfigurację oprogramowania systemowego oraz oprogramowania Systemu, przeprowadzenie testów odbiorowych zgodnie z Planem Testów Akceptacyjnych Wdrożenia Systemu. Przedstawiony zakres musi być zrealizowany w obu środowiskach: testowym i produkcyjnym. Przygotowanie niezbędnej infrastruktury sprzętowej, w szczególności: montaż fizyczny, podłączenie do instalacji zasilającej oraz wykonanie niezbędnych połączeń sieci LAN leży po stronie Zamawiającego. Wszystkie działania w ramach etapu powinny zostać przeprowadzone w terminach zgodnych z Harmonogramem Wdrożenia Systemu i zakończone pozytywnym wynikiem Testów Akceptacyjnych Wdrożenia Systemu. Produkty etapu:
+\begin{enumerate}
+\item Wdrożona funkcjonalność Systemu.
+\item Protokoły Testów Akceptacyjnych Wdrożenia Systemu.
+\end{enumerate}
+\item \textbf{Etap Dokumentacji.} Zakres prac Wykonawcy w trakcie etapu obejmuje przygotowanie dokumentacji w postaci:
+\begin{enumerate}
+\item Procedur operacyjnych Systemu;
+\item Procedur administracyjnych Systemu
+\end{enumerate}
+Opracowane na tym etapie dokumenty muszą opisywać oba środowiska: testowe i produkcyjne.
+\item \textbf{Etap Przekazania do Eksploatacji.} Zakres prac Wykonawcy w trakcie etapu obejmuje przekazanie Zamawiającemu wszystkich haseł i praw administracyjnych oraz udzielanie przez okres 2 tygodni wsparcia w rozwiązywaniu problemów powstających podczas wykonywania czynności administracyjnych. Wykonawca będzie świadczył wsparcie telefonicznie lub, jeżeli problem tego wymaga, w siedzibie Zamawiającego. Przedstawiony zakres dotyczy obu środowisk: testowego i produkcyjnego. Produkty etapu:
+\begin{enumerate}
+\item Podpisany przez Zamawiającego i Wykonawcę Protokół Przekazania do Eksploatacji;
+\item Raport z Okresu Wsparcia  – przygotowany przez Wykonawcę;
+\end{enumerate}
+\end{enumerate}
+Warunkiem zakończenia realizacji kolejnych etapów jest zaakceptowanie przez Zamawiającego wszystkich uzgodnionych produktów oraz podpisanie przez Zamawiającego Protokołów Odbioru.
 \paragraph{Przebieg szkoleń}
 W ramach wdrożenia systemu odbędzie się cykl szkoleń przeznaczonych dla uczniów, rodziców, nauczycieli i administratorów. Szkolenia będą prowadzone w salach szkolnych przeznaczonych do nauki informatyki - wyposażone w stanowiska komputerowe, projektor oraz tablicę do rysowania.
 \begin{itemize}
@@ -319,6 +357,7 @@ Pracownicy oddelegowani do udziału w szkoleniach obowiązani są uczestniczyć 
 Do systemu dołączony zostanie ,,samouczek'' - dokument opisujący działanie poszczególnych części systemu.
 
 \subsection{Warunki odbioru systemu}
+
 \section{Utrzymanie systemu po wdrożeniu}
 odporność na błędy, że działa przez jakiś okres czasu
 %TODO warunki co do ludzi utrzymujących: wykształcenie, certyfikaty
