@@ -1,0 +1,126 @@
+\documentclass{article}
+\usepackage[MeX]{polski}
+\usepackage[utf8]{inputenc}
+\author{Fundacja nowoczesna szkoła\\\\
+Honorata Rosłanowska \\
+Marcin Wardziński\\
+Kacper Sarnacki \\
+Łukasz Dragan \\
+Kacper Trojanowski \\
+Mateusz Flis \\
+Michał Grabowski \\
+Piotr Waszkiewicz}
+\title{System polis ubezpieczeniowych}
+
+\begin{document}
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+
+\section{Uzasadnienie i cel projektu}
+Przyczyną stworzenia zamówienia i uruchomienia projektu jest brak wystarczającej wydajności, oraz ograniczona funkcjonalność obecnie stosowanego systemu. \\
+Celem projektu jest stworzenie systemu polis ubezpieczeniowych, który usprawni działanie firmy poprzez zwiększenie dostępności oferowanych produktów oraz przyspieszenie ich sprzedaży. Rozwiązanie będzie podobne do już istniejącego, o rozszerzonej funkcjonalności i zwiększonej wydajności, co przyczyni się do zwiększenia przychodów dla firmy. Docelowo system ten ma zastąpić obecnie działające rozwiązanie.
+
+\section{Cele projektu, miary sukcesu}
+\begin{itemize}
+	\item System umożliwia opcję kalkulacji składki. Czas kalkulacji nie może przekraczać 5 sekund, przy niepełnej kalkulacji, czas ten nie może przekraczać 1 sekundy
+	\item Założenie polisy przy 100 użytkownikach nie powinno przekraczać 3 sekund
+	\item 5/10 wybranych przez Zamawiającego osób uzna interfejs graficzny za spełniający warunki zamówienia
+	\item System spełnia wymogi dotyczące wydajności opisane w specyfikacji
+\end{itemize}
+
+\section{Wymagania}
+\begin{itemize}
+	\item System umożliwia tworzenie ofert oraz zawieranie polis
+	\item Każda polisa ma możliwość poprawnej zmiany, rozwiązania lub wznowienia
+	\item Pracownicy mają możliwość przeglądania i zarządzania polisami ubezpieczeniowymi
+	\item Użytkownicy mają możliwość rejestracji oraz zawierania polis poprzez aplikacje mobilne na systemach iOS i Androd oraz przez stronę internetową przy użyciu przeglądarek
+	\item System posiada moduł kalkulatora
+	\item System umożliwia poprawne dokonywanie płatności poprzez aplikację
+	\item System umożliwia integrację z systemami zewnętrznymi
+	\item Do systemu stworzona jest dokumentacja
+	\item W systemie wyodrębnione są role użytkowników
+	\item System posiada dane pochodzące ze starego systemu
+	
+\end{itemize}
+
+\section{Zakres projektu}
+\begin{itemize}
+	\item Wytworzenie oprogramowania
+	\item Migracja danych
+	\item Instalacja i uruchomienie systemu
+	\item Szkolenia dla pracowników - przygotowanie kursów e-learningowych
+	\item Wsparcie serwisowe
+\end{itemize}
+
+\section{Produkty projektu}
+\begin{itemize}
+	\item Aplikacja webowa dla pracowników oraz dla klientów firmy
+	\item Aplikacja mobilna dla klientów firmy.
+	\item Baza danych
+\end{itemize}
+
+\section{Opis ryzyka}
+\begin{itemize}
+	\item Dane w istniejącej bazie danych będą niekompletne/niespójne lub wymagać będą czasochłonnej konwersji, co skutkuje spowolnieniem implementacji nowego systemu oraz możliwą koniecznością skorzystania z usług eksperta
+	\item Ryzyka związane z integracją z wieloma serwisami zewnętrznymi:
+	\begin{itemize}
+		\item braki w dokumentacji mogą spowolnić integrację
+		\item w wyniku niespodziewanych zmian w interfejsie programistycznym serwisu, konieczna może być ponowna implementacja funkcjonalności
+		\item ograniczenia transferu danych nałożone przez dostawców usług sprawiają, iż wydajność systemu będzie niższa niż oczekiwano
+	\end{itemize}
+	\item Brak zachowania ciągłości w dostępności wszystkich specjalistów zgodnie z wymaganiami Zleceniodawcy może skutkować poniesieniem kar pieniężnych
+	\item Brak specjalistycznej wiedzy dotyczącej tematyki polis. Wiąże się z tym ryzyko spowolnienia implementacji funkcjonalności oraz konieczność skorzystania z usług doradczych osób z zewnątrz	
+\end{itemize}
+
+\section{Harmonogram}
+\begin{itemize}
+	\item Przygotowanie dokumentacji technicznej
+	\item Implementacja
+	\item Wdrożenie systemu
+	\item Testy
+	\item Migracja danych
+	\item Szkolenia dla pracowników - kursy e-learningowe
+	\item Zdanie gotowego rozwiązania	
+\end{itemize}
+
+\section{Budżet}
+\begin{itemize}
+	\item Koszt wytworzenia oprogramowania: 370 000 PLN
+	\item Koszt przygotowania kursów e-learningowych: 60 000 PLN
+	\item Koszt rocznego utrzymania systemu: 200 000 PLN
+\end{itemize}
+
+\section{Warunki odbioru}
+\begin{itemize}
+	\item Wraz z oddaniem projektu przekazana zostanie cała dokumentacja systemu
+	\item Złożenie raportu z przygotowanych testów wraz z dokumentacją
+	\item Certyfikat zgodności z zewnętrznymi serwisami
+	\item Zaakceptowanie protokołu opisującego przeprowadzoną migrację danych
+	\item Podpisanie dokumentu podsumowującego przeprowadzone szkolenia
+	\item Podpisanie protokołu zdawczego	
+\end{itemize}
+
+\section{Menadżer projektu}
+\begin{itemize}
+	\item ŁD - lider zespołu programistycznego
+	\begin{itemize}
+		\item może wnioskować o zmianę budżetu
+		\item może zwalniać lub zatrudniać pracowników
+		\item odpowiada za projekt
+	\end{itemize}	
+\end{itemize}
+
+\section{Sponsor}
+\begin{itemize}
+	\item PW - kierownik działu IT
+	\begin{itemize}
+		\item może zmieniać budżet
+		\item może anulować projekt
+		\item może zmieniać harmonogram
+		\item odpowiada za negocjacje	
+	\end{itemize}
+\end{itemize}
+
+\end{document}
