@@ -1,0 +1,44 @@
+Projekt systemu
+	przeprowadzenie analizy biznesowej
+	stworzenie projektu technicznego
+Wytworzenie oprogramowania
+
+	Interfejs graficzny
+		Stworzenie Projektu interfejsu aplikacji webowej
+		Stworzenie Projektu interfejsu kalkulatora
+		Stworzenie projektu interfejsu aplikacji mobilnej
+		Przygotowanie grafik dla interfejsów
+
+	Implementacja
+		Baza danych
+		Aplikacja webowa
+		Kalkulator
+		Aplikacja mobilna
+		wspólne Api dla aplikacji
+			Zarządzanie użytkownikami
+			Zarzadzanie ofertami i polisami
+			Moduł płatnosci
+			Integracja z EuroTax
+			Integracja z UFG
+			Integracja z autobaza.pl
+			Integracja z systemem zarzadzania dokumentami
+			Integracja z KRD
+			Integracja z hurtownia danych Oracle Exadata
+		
+	Wykonanie Migracji danych
+	Testy
+		Przeprowadzenie testów wydajnościowych
+		Preprowadzenie Testów integracyjnych
+	
+	Przygotowanie dokumentacji technicznej
+	Przygotowanie instrukcji dla użytkowników
+	
+Wdrozenie systemu
+	Wdrożenie środowiska produkcyjnego
+	Przeprowadzenie testów akceptacyjnych
+Szkolenia
+	Przygotowanie kursów e-learningowych
+	Przeprowadzenie szkoleń
+Wsparcie serwisowe
+	Doradztwo telefoniczne/mailowe
+	Faktyczne prace serwisowe
