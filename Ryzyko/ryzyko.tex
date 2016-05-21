@@ -1,0 +1,53 @@
+\documentclass{article}
+\usepackage[MeX]{polski}
+\usepackage[utf8]{inputenc}
+\usepackage{array}
+\usepackage{longtable}
+
+\linespread{1.4}
+
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+
+\author{Fundacja nowoczesna szkoła\\\\
+Honorata Rosłanowska \\
+Marcin Wardziński\\
+Kacper Sarnacki \\
+Łukasz Dragan \\
+Kacper Trojanowski \\
+Mateusz Flis \\
+Michał Grabowski \\
+Piotr Waszkiewicz}
+\title{System polis ubezpieczeniowych}
+
+\begin{document}
+\maketitle
+\newpage
+\def\arraystretch{2.5}
+\setlength\LTleft{-2.5cm}
+\eject \pdfpagewidth=23in \pdfpageheight=11in
+\begin{longtable}{|L{2.5cm}|L{5cm}|L{7cm}|L{1.5cm}|L{1.5cm}|L{1.5cm}|L{5cm}|L{1.5cm}|L{5cm}|L{1.5cm}|L{5cm}|L{1.5cm}|L{5cm}|}
+\hline
+\multicolumn{ 1}{|c|}{\textbf{Właściciel}} & \multicolumn{ 1}{c|}{\textbf{Ryzyko}} & \multicolumn{ 1}{c|}{\textbf{Wpływ}} & \multicolumn{ 1}{c|}{\textbf{Prawdopodobieństwo}} & \multicolumn{ 1}{c|}{\textbf{Wartość [zł]}} & \multicolumn{ 8}{c|}{\textbf{Możliwe sposoby rozwiązania ryzyka}} \\ \cline{ 6- 13}
+\multicolumn{ 1}{|l|}{} & \multicolumn{ 1}{l|}{} & \multicolumn{ 1}{l|}{} & \multicolumn{ 1}{l|}{} & \multicolumn{ 1}{l|}{} & \multicolumn{ 2}{c|}{\textbf{Akceptacja}} & \multicolumn{ 2}{c|}{\textbf{Przeniesienie}} & \multicolumn{ 2}{c|}{\textbf{Unikanie}} & \multicolumn{ 2}{c|}{\textbf{Łagodzenie}} \\ \cline{ 6- 13}
+\multicolumn{ 1}{|l|}{} & \multicolumn{ 1}{l|}{} & \multicolumn{ 1}{l|}{} & \multicolumn{ 1}{l|}{} & \multicolumn{ 1}{l|}{} & \multicolumn{1}{c|}{\textbf{Koszt [zł]}} & \multicolumn{1}{c|}{\textbf{Opis}} & \multicolumn{1}{c|}{\textbf{Koszt [zł]}} & \multicolumn{1}{c|}{\textbf{Opis}} & \multicolumn{1}{c|}{\textbf{Koszt [zł]}} & \multicolumn{1}{c|}{\textbf{Opis}} & \multicolumn{1}{c|}{\textbf{Koszt [zł]}} & \multicolumn{1}{c|}{\textbf{Opis}} \\ \hline
+Project Manager ŁD & Ograniczona wiedza zespołu o technikach zarządzania projektami  & Utrodnienia pracy menedżera projektu, problemy w komunikacji, szacujemy, że około 5\% czasu pracowników będzie poświęcany konfliktom, których można uniknąć & 0.3 & 6000 & 1800 & Założenie, że przeciętna wiedza nt. zarządzania projektami bdzie wystarczająca & 200000 & Zlecenie wykonania całego projektu firmie zewnetrznej &  & Brak możliwości & 7000 & Zorganizowanie szkolenia z pracy w projekcie \\ \hline
+Specjalista ds. baz danych KS & Komplikacje związane z jakością danych starego systemu utrudniające ich migrację & Niestabilne działanie systemu po wykonaniu migracji danych będzie wymagało dodatkowej pracy deweloperów/administratorów w celu identyfikacji oraz naprawienia błędów & 0.6 & 10000 & 6000 & Założenie, że dane są dostatecznie dobrej jakości & 5000 & Obarczenie odpowiedzialnością za jakość danych firmę zamawiającą system. Rozwiązanie to będzie wymagało negocjacji ze stroną zamawiającą. &  & Brak możliwości & 3500 & Wydelegowanie specjalisty ds. baz danych do siedziby firmy klienta, aby ocenił jakość danych przechowywanych w dotychczas używanym systemie \\ \hline
+Analityk Systemowy MW & Ograniczona wiedza na temat norm prawnych, zgodnie z którymi powinna zostać wyliczona składka ubezpieczeniowa & Błędy w działaniu podstawowej funkcjonalności systemu, 
+Konsekwencją będzie opóźnienie odbioru projektu (ok. 10 dni) oraz dodatkowe nakłady pracy & 0.3 & 25000 & 7500 & Założenie, że nie bedzie problemów prawnych & 10000 & Zatrudnienie firmy prawniczej &  & Brak możliwości & 15000 & Zorganizowanie szkolenia pracowników z zakresu prawa \\ \hline
+Analityk Systemowy MW & Ograniczony dostęp do wiedzy na temat rachunkowości, procesów księgowych zachodzących w firmie Zamawiającego & Błędy w działaniu modułu księgowości. Konsekwencją będzie opóźnienie odbioru projektu (ok. 10 dni) oraz dodatkowe nakłady pracy & 0.5 & 25000 & 12500 & Założenie, że wiedza przekazana od klienta będzie wystarczająca & 5000 & Zatrudnienie specjalistów księgowości &  & Brak możliwości & 2000 & Integracja z zespołem księgowych  \\ \hline
+\multicolumn{ 1}{|l|}{Project Manager ŁD} & \multicolumn{ 1}{L{5cm}|}{Problem z wykonaniem dwóch wersji mobilnych aplikacji} & \multicolumn{ 1}{L{5cm}|}{Opóźnienia w harmonogramie (ok. 10 dni) } & \multicolumn{ 1}{L{1.5cm}|}{0.7} & \multicolumn{ 1}{l|}{25000} & \multicolumn{ 1}{l|}{17500} & \multicolumn{ 1}{L{5cm}|}{Koszty nadgodzin pracowników} & \multicolumn{ 1}{l|}{50000} & \multicolumn{ 1}{L{5cm}|}{Zlecenie wykonania aplikacji mobilnych firmie zewnetrznej} & \multicolumn{ 1}{l|}{50000} & \multicolumn{ 1}{L{5cm}|}{Uzgodnienie z klientem, by nie tworzyć aplikacji na urządzenia mobilne} & 10000 & Zatrudnienie programisty aplikacji na urządzenia mobilne \\ \cline{ 12- 13}
+\multicolumn{ 1}{|l|}{} & \multicolumn{ 1}{l|}{} & \multicolumn{ 1}{l|}{} & \multicolumn{ 1}{l|}{} & \multicolumn{ 1}{l|}{} & \multicolumn{ 1}{l|}{} & \multicolumn{ 1}{l|}{} & \multicolumn{ 1}{l|}{} & \multicolumn{ 1}{l|}{} & \multicolumn{ 1}{l|}{} & \multicolumn{ 1}{l|}{} & 10000 & Stworzenie aplikacji multiplatformowej \\ \hline
+Project Manager ŁD & Problem z osiągnięciem zadanej wydajności systemu na obecnie istniejącej architekturze
+ & Niezgodność ze specyfikacją projektu. W konsekwencji data odebrania projektu może się przesunąć (0.5\% wartości projektu za każdy dzień opóźnienia) (ok. 10 dni) & 0.5 & 25000 & 12500 & Założenie, że nie będzie problemów z wydajnością & \multicolumn{1}{l|}{} & Brak możliwości &  & Brak możliwości & 1500 & Wykonywanie dodatkowych testów wydajnościowych w trakcie realizacji poszczególnych funkcjonalności \\ \hline
+Analityk Systemowy MW & Problem z wykonaniem dokumentacji analitycznej w wyznaczonym przez zamawiającego czasie & Wykonanie dokumentacji w pełnym zakresie w ograniczonym czasie może okazać się niewykonalne, w konsekwencji skrócony zostanie okres przeznaczony na implementację systemu. Wynikłe z tego powodu opóźnienie może wynieść ok. 5 dni & 0.3 & 12500 & 3750 &  & 7500 & Zlecenie wykonania dokumentacji firmie zewnętrznej &  & Brak możliwości & 5000 & Wyznaczenie do zadania wiekszej liczby pracowników \\ \hline
+Projektant UX & Problem z akceptacją, którejś z przygotowanych wersji interfejsu użytkownika
+ & Oba interfejsy użytkownika zaprojektowane przez projektantów mogą nie spełniać kryteriów akceptacji zamawiającego projekt. W konsekwencji projektanci będą zmuszeni do zintensyfikowania swojej pracy w celu wykonania dodatkowych projektów interfejsu. & 0.2 & 10000 & 2000 &  & 8000 & Zlecenie wykonania projketu interfejsu użytkownika firmie zewnetrznej &  & Brak możliwości & 2000 & Częste konsultacje z klientem aktualnej wersji aplikacji i otrzymywanie rzeczowych informacji zwrotnych \\ \hline
+Project Manager ŁD & Problemy z uwspólnieniem API & Opóźnienie w implementacji aplikacji wynikające z problemami z integracją poszczególnych części systemu (ok. 10dni) & 0.2 & 25000 & 5000 &  & 15000 & Zlecenie wykonania API firmie zewnętrznej &  & Brak możliwości & 7500 & Częste konsultacje przy projektowaniu poszczególnych interfejsów \\ \hline
+Project Manager ŁD & Brak zgodności aplikacji z IE8 & Błędy w interfejsie aplikacji webowej dla użytkowników korzystających z IE8. Ich konsekwencją będzie opóźnienie w przekazaniu systemu (ok. 5 dni) & 0.8 & 12500 & 10000 & Uwzględnienie problemów w harmonogramie & 15000 & Zlecenie integracji z IE8 firmie zewntrznej & \multicolumn{1}{l|}{5000} & Przeprowadzenie negocjacji z Klientem w celu wykreślenia ze specyfikacji projektu zapisu o IE8 lub przedłużenie terminu na wykonanie tej części systemu & 1000 & Wykorzystanie bibliotek umożliwiających użycie nowych technologii w starszych przeglądarkach \\ \hline
+\end{longtable}
+
+
+\end{document}
