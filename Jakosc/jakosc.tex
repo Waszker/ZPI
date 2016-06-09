@@ -55,10 +55,11 @@ Celem stworzenia dokumentu pełniącego rolę planu zarządzania jakością jest
 			\item Testy jednostkowe \\
 			\item Konwencje formatowania \\
 			\item Continuous integration \\
+			\item Code review \\
 		\end{itemize} 
 	\end{minipage} &
 	\begin{minipage}[t]{0.4\textwidth}
-		Podczas pisania kodu, programiści stosować się będą do wcześniej ustalonych zasad formatowania i nazewnictwa zmiennych. Testy jednostkowe pisane w ramach projektu, oraz zastosowanie continuous integration, dostarczą mierzalnych wartości dotyczących jakości stworzonego kodu.
+		Podczas pisania kodu, programiści stosować się będą do wcześniej ustalonych zasad formatowania i nazewnictwa zmiennych. Testy jednostkowe pisane w ramach projektu, zastosowanie continuous integration wraz z code review, dostarczą mierzalnych wartości dotyczących jakości stworzonego kodu.
 	\end{minipage}\\
 	\hline
 \end{tabular}
@@ -96,15 +97,26 @@ Celem stworzenia dokumentu pełniącego rolę planu zarządzania jakością jest
 	\end{minipage}\\
 	\hline
 	
+	
+\end{tabular}
+\end{center}
+
+\begin{center}
+\begin{tabular}{|>{\centering\arraybackslash}m{0.2\textwidth}|>{\centering\arraybackslash}m{0.4\textwidth}|>{\centering\arraybackslash}m{0.4\textwidth}|}
+	\hline 
+	\textbf{Miernik jakości} & \textbf{Metoda oceny} & \textbf{Wyjaśnienie} \\
+	\hline
 	Bezpieczeństwo danych &
 	\begin{minipage}[t]{0.4\textwidth}
 		\begin{itemize}
 			\item Kopie zapasowe \\
 			\item Kontrola dostępu do narzędzi administracyjnych \\
+			\item 'Zasolenie' haszy haseł
+			\item Audyt każdej tabeli
 		\end{itemize} 
 	\end{minipage} &
 	\begin{minipage}[t]{0.4\textwidth}
-		Każda poważna zmiana w systemie wymaga autoryzacji ze strony administratora. Kopie zapasowe bazy danych są trzymane na dwóch, różnych nośnikach i regularnie uaktualniane.
+		Każda poważna zmiana w systemie wymaga autoryzacji ze strony administratora. Kopie zapasowe bazy danych są trzymane na dwóch, różnych nośnikach i regularnie uaktualniane. Haszowanie samych haseł nie jest bezpiecznym rozwiązaniem, w związku z tym będziemy haszowali hasło + login. Każda zmiana dokonywana przez użytkowników będzie zapisywana w bazie danych, co umożliwia odtworzenie przebiegu wydarzeń.
 	\end{minipage}\\
 	\hline	
 	
@@ -120,6 +132,7 @@ Celem stworzenia dokumentu pełniącego rolę planu zarządzania jakością jest
 		Projekt powinien być realizowany zgodnie z ustalonymi etapami, w ramach przyjętych ram czasowych i budżetowych.
 	\end{minipage}\\
 	\hline
+	
 \end{tabular}
 \end{center}
 
