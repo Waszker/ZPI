@@ -1,0 +1,128 @@
+\documentclass{article}
+\usepackage[MeX]{polski}
+\usepackage[utf8]{inputenc}
+\usepackage{array}
+\usepackage{longtable}
+
+\linespread{1.4}
+
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+
+\author{Fundacja nowoczesna szkoła\\\\
+Honorata Rosłanowska \\
+Marcin Wardziński\\
+Kacper Sarnacki \\
+Łukasz Dragan \\
+Kacper Trojanowski \\
+Mateusz Flis \\
+Michał Grabowski \\
+Piotr Waszkiewicz}
+\title{System polis ubezpieczeniowych}
+
+\begin{document}
+\maketitle
+\newpage
+
+\section{Plan zarządzania jakością}
+
+Celem stworzenia dokumentu pełniącego rolę planu zarządzania jakością jest zapewnienie świadczenia lepszej jakości usług, oraz stworzenie sprawnie działającego produktu końcowego. Ponieważ na jakość przygotowanego rozwiązania ma wpływ wiele czynników, zostały one zawarte i opisane w poniższej tabeli. \\
+
+\begin{center}
+\begin{tabular}{|>{\centering\arraybackslash}m{0.2\textwidth}|>{\centering\arraybackslash}m{0.4\textwidth}|>{\centering\arraybackslash}m{0.4\textwidth}|}
+	\hline 
+	\textbf{Miernik jakości} & \textbf{Metoda oceny} & \textbf{Wyjaśnienie} \\
+	\hline
+	
+	Wydajność &
+	\begin{minipage}[t]{0.4\textwidth}
+		\begin{itemize}
+			\item Testy akceptacyjne \\
+			\item Testy obciążeniowe \\
+			\item Testy jednostkowe \\
+		\end{itemize} 
+	\end{minipage} &
+	\begin{minipage}[t]{0.4\textwidth}
+		System spełnia wymagania dotyczące wydajności określone w specyfikacji: czas założenia polisy przy 100 użytkownikach nie powinien przekraczać 3 sekund, czas kalkulacji składni nie powinien przekraczać 5 sekund (w przypadku niepełnej składki 1 sekundy).
+	\end{minipage}\\
+	\hline
+	
+	Jakość kodu &
+	\begin{minipage}[t]{0.4\textwidth}
+		\begin{itemize}
+			\item Testy jednostkowe \\
+			\item Konwencje formatowania \\
+			\item Continuous integration \\
+		\end{itemize} 
+	\end{minipage} &
+	\begin{minipage}[t]{0.4\textwidth}
+		Podczas pisania kodu, programiści stosować się będą do wcześniej ustalonych zasad formatowania i nazewnictwa zmiennych. Testy jednostkowe pisane w ramach projektu, oraz zastosowanie continuous integration, dostarczą mierzalnych wartości dotyczących jakości stworzonego kodu.
+	\end{minipage}\\
+	\hline
+\end{tabular}
+\end{center}
+	
+\begin{center}
+\begin{tabular}{|>{\centering\arraybackslash}m{0.2\textwidth}|>{\centering\arraybackslash}m{0.4\textwidth}|>{\centering\arraybackslash}m{0.4\textwidth}|}
+	\hline 
+	\textbf{Miernik jakości} & \textbf{Metoda oceny} & \textbf{Wyjaśnienie} \\	
+	\hline
+	
+	Dokumentacja &
+	\begin{minipage}[t]{0.4\textwidth}
+		\begin{itemize}
+			\item Udokumentowane klasy i metody publiczne \\
+			\item Dokumentacja systemu \\
+			\item Instrukcja instalacji \\
+			\item Instrukcja obsługi \\
+		\end{itemize} 
+	\end{minipage} &
+	\begin{minipage}[t]{0.4\textwidth}
+		Dostarczony kod powinien być przejrzyście i schludnie napisany. Dodatkowo, każda publiczna klasa oraz ich metody powinny być opatrzone stosownym komentarzem tłumaczącym ich funkcję. Wraz z oddaniem systemu dostarczona powinna zostać odpowiednia instrukcja instalacji oraz obsługi a także dokument opisujący najważniejsze elementy systemu. Wszystkie instrukcje powinny zostać napisane w sposób prosty do zrozumienia, wykorzystując w tym celu schematy i obrazki.
+	\end{minipage}\\
+	\hline
+	
+	Bezpieczeństwo systemu &
+	\begin{minipage}[t]{0.4\textwidth}
+		\begin{itemize}
+			\item Szyfrowane połączenia \\
+			\item Bezpieczny system logowania \\
+		\end{itemize} 
+	\end{minipage} &
+	\begin{minipage}[t]{0.4\textwidth}
+		Każde połączenie z zewnętrznym serwisem realizowane jest przy użyciu protokołu HTTPS. Użytkownicy systemu muszą założyć w nim konto na które logują się przy użyciu loginu i hasła.
+	\end{minipage}\\
+	\hline
+	
+	Bezpieczeństwo danych &
+	\begin{minipage}[t]{0.4\textwidth}
+		\begin{itemize}
+			\item Kopie zapasowe \\
+			\item Kontrola dostępu do narzędzi administracyjnych \\
+		\end{itemize} 
+	\end{minipage} &
+	\begin{minipage}[t]{0.4\textwidth}
+		Każda poważna zmiana w systemie wymaga autoryzacji ze strony administratora. Kopie zapasowe bazy danych są trzymane na dwóch, różnych nośnikach i regularnie uaktualniane.
+	\end{minipage}\\
+	\hline	
+	
+	Terminowość &
+	\begin{minipage}[t]{0.4\textwidth}
+		\begin{itemize}
+			\item Realizacja etapów zgodnie z harmonogramem \\
+			\item Dotrzymanie terminu oddania projektu \\
+			\item Realizacja przedsięwzięcia w ramach przewidzianego budżetu \\
+		\end{itemize} 
+	\end{minipage} &
+	\begin{minipage}[t]{0.4\textwidth}
+		Projekt powinien być realizowany zgodnie z ustalonymi etapami, w ramach przyjętych ram czasowych i budżetowych.
+	\end{minipage}\\
+	\hline
+\end{tabular}
+\end{center}
+
+
+
+\end{document}
